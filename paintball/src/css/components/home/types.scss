@@ -1,0 +1,83 @@
+/*========================================================== 6, Types ==========================================================*/
+.types {
+  position: relative;
+
+  &-col {
+    &:hover {
+      .types__content-wrapper {
+        -webkit-box-shadow: -2px 3px 17px 8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -2px 3px 17px 8px rgba(0, 0, 0, 0.75);
+        box-shadow: -2px 3px 17px 8px rgba(0, 0, 0, 0.75);
+      }
+    }
+
+    @include min-breakpoint(768) {
+      padding: 0 !important;
+    }
+
+    #first {
+      .types__content-wrapper {
+        background-image: url("../../../images/paintball-home-wrapbg1.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        @include max-breakpoint(992) {
+          margin-top: -10rem;
+        }
+
+        @include max-breakpoint(426) {
+          margin-top: 0;
+        }
+      }
+    }
+
+    #second {
+      .types__content-wrapper {
+        background-image: url("../../../images/paintball-home-wrapbg2.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+        @include max-breakpoint(767) {
+          margin-top: 0;
+        }
+
+        @include max-breakpoint(426) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  &__content {
+    &-wrapper {
+      padding: 7.5rem 3.125rem 6.5625rem;
+      background-color: rgb(25, 25, 26);
+      margin-top: -10rem;
+      height: 20rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transition: all 0.3s;
+
+      @include max-breakpoint(767) {
+        height: auto;
+        margin-top: 0;
+      }
+
+      .content-wrapper__link {
+        color: $color-white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-family: "Bungee", cursive;
+
+        @include max-breakpoint(426) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

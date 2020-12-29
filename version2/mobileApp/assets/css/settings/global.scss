@@ -1,0 +1,40 @@
+/*
+Theme name : Mobile App
+Theme description:
+Author: PHAM ANH TUAN
+Version: 2.0.0
+
+
+=================================================== TABLE OF CONTENTS ===================================================
+1, Reset Css
+2, Header
+
+*/
+
+
+/*=================================================== 1, Reset Css ===================================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none !important;
+    }
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+ul {
+    margin: 0 !important;
+    li{
+        list-style: none;
+    }
+}

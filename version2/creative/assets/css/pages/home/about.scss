@@ -1,0 +1,41 @@
+/*============================================= 4, About =============================================*/
+.about {
+  background-color: $color-primary;
+
+  @include max-breakpoint(769) {
+    padding: 3rem 0;
+  }
+
+  &__heading {
+    color: $color-white;
+    @include max-breakpoint(426) {
+      font-size: 1.75rem;
+    }
+  }
+
+  &__btn {
+    border: none;
+    border-radius: 10rem;
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: $color-black;
+    background-color: #f8f9fa;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-black;
+      background-color: #e2e6ea;
+      border-color: #dae0e5;
+    }
+  }
+
+  .text-lighter {
+    color: $color-light-50;
+    margin-bottom: 3rem;
+  }
+
+  .divider {
+    background-color: $color-white;
+  }
+}

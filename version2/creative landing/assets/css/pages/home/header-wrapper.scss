@@ -1,0 +1,11 @@
+/*=================================== 2, Header-Wrapper ===================================*/
+
+.header-wrapper {
+  background: linear-gradient(to left, #6442ff96 0%, #9012fe9e 100%),
+    url("../images/rawpixel-com-594859-unsplash-min.png");
+  position: relative;
+  z-index: 50;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}

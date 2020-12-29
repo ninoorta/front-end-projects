@@ -1,0 +1,53 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title T-Paintball
+        // Link Css
+        link(rel="stylesheet", href="css/main.css")
+        // Link Bootstrap Css
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' integrity='sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z' crossorigin='anonymous')
+        // Link Fontawesome Css
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css' integrity='sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==' crossorigin='anonymous')
+        // Link Ionicons
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.1.2/collection/components/icon/icon.min.css' integrity='sha512-DR9Jj0uFIfe7v1QLrvPRusRxqdSnVSVRyRBt1H8gcRQgxMKEwsOMSNYs0hyIpo8AITFyCMDC2Q1fCg1XcgdYig==' crossorigin='anonymous')
+        // Link Css Owl Carousel
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css' integrity='sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==' crossorigin='anonymous')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css' integrity='sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==' crossorigin='anonymous')
+        // Link Css FancyBox
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css' integrity='sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==' crossorigin='anonymous')
+        // Link Css WowJs
+        link(rel="stylesheet" href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css")
+        // Link Google Font
+        link(href='https://fonts.googleapis.com/css2?family=Bungee&display=swap' rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Lora&display=swap' rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Poppins&display=swap' rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css2?family=Rubik&display=swap' rel='stylesheet')
+    body#top
+      .wrapper
+        include ./layouts/preloader.pug
+        include ./layouts/header.pug
+        block content
+        include ./layouts/footer.pug
+        include ./layouts/copyright.pug
+        include ./layouts/sidenav.pug
+    // Link Jquery
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.js' integrity='sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=' crossorigin='anonymous')
+    // Link Ionicons
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.1.2/ionicons.min.js' integrity='sha512-2CLajDubS5WtGJysIjlV53WZWEP1Dve1eMbOEl/Yyg1xXQkfiuf3YZ3TMBxADg0hFU0YEIbTQqCKZvnFI0OqPg==' crossorigin='anonymous')
+    // Link Bootstrap Js
+    // JS, Popper.js
+    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js' integrity='sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN' crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js' integrity='sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV' crossorigin='anonymous')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+    // Link Js Owl carousel
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' integrity='sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==' crossorigin='anonymous')
+    // Link Js FancyBox
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js' integrity='sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==' crossorigin='anonymous')
+    // Link WowJs
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
+    // Link Lazyload Js
+    script(type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js')
+    script(type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js')
+    script(src="js/main.js")

@@ -1,0 +1,597 @@
+/*
+Theme name: freelancer;
+Theme description: 
+1 rem = 10* default font size (px)
+Author: PHAM ANH TUAN
+Version: 1.0.0
+*/
+/* 
+====================== Table Of Content ======================
+1, Reset css
+2, Header 
+3, Banner
+4, Portfolio
+5, About
+6, Contact
+7, Footer
+8, Copyright
+9, Media screen settings
+*/
+/* ====================== 1, Reset css ====================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", "-apple-system", "BlinkMacSystemFont",
+    "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, 
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+/* .container{
+    width: 1170px;
+    padding: 0 25px;
+    margin: 0 auto;
+} */
+.ml-auto{
+    margin-left: auto ;
+}
+.mr-auto{
+    margin-right: auto ;
+}
+
+.divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1.25rem 0 1.5rem;
+}
+.divider .divider__line{
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 100%;
+}
+.divider .divider__line:first-child{
+    margin-right: 1rem;
+}
+.divider .divider__line.divider__line:last-child{
+    margin-left: 1rem;
+}
+.divider .divider__icon{
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* ====================== 2, Header ====================== */
+.header{
+    height: 80px;
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+.header *, .banner * {
+    color: #fff;
+}
+
+.header .header__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header .header__menu .header__menu-bar{
+    display: none;
+}
+.header .header__menu .header__menu-logo{
+    font-size: 1.75rem;
+}
+
+.header .header__menu .header__menu-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header .header__menu .header__menu-list .list__item{
+    padding-left: 3rem;
+}
+.header .header__menu .header__menu-list .list__item .list__item-link:hover{
+    color: #1abc9c ;
+}
+
+/* ====================== 3, Banner ====================== */
+.banner{
+    background-color: #1abc9c;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.banner .banner__infor{
+    padding-top: 6rem;
+}
+.banner .banner__infor .banner__infor-avatar{
+    width: 15rem;
+    margin-bottom: 3rem;
+}
+.banner .banner__heading{
+    font-size: 4rem;
+    line-height: 3.5rem;
+}
+.banner .banner__divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1.25rem 0 1.5rem;
+}
+.banner .banner__divider .banner__divider-line{
+    
+}
+.banner__subheading{
+    font-size: 1.5rem;
+}
+
+/* ====================== 4, Portfolio ====================== */
+.portfolio{
+    color: #2c3e50 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 0;
+}
+.portfolio .portfolio__content .portfolio__content-heading{
+    font-size: 3rem;
+    line-height: 2.5rem;
+}
+
+.portfolio .portfolio__content .portfolio__divider .portfolio__divider-icon{
+    color: #2c3e50 ;
+}
+.portfolio .portfolio__content .portfolio__divider .portfolio__divider-line{
+    background-color: #2c3e50 ;
+}
+
+
+.portfolio .portfolio__grid .portfolio__grid-item{
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.5rem;
+    display: block;
+    margin-bottom: 3rem;
+
+}
+
+
+.portfolio .portfolio__content .portfolio__grid .portfolio__grid-item-icon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;  /*Hiệu ứng chậm 0.3s*/
+    background-color: rgba(26, 188, 156, 0.9);
+}
+.portfolio .portfolio__content .portfolio__grid .portfolio__grid-item .portfolio__grid-item-icon:hover{
+    opacity: 1;
+}
+
+.portfolio .portfolio__content .portfolio__grid .portfolio__grid-item-icon i {
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.portfolio .portfolio__grid .portfolio__grid-item img {
+    width: 100%;
+    display: block;      /*Do img default là inline tag*/
+}
+
+/* ====================== 5, About ====================== */
+.about{
+    background-color: #1abc9c ;
+    color: #fff;
+    /* display: flex;
+    justify-content: center; */
+    padding: 6rem 0 8.5rem 0;    
+    text-align: center;
+    /* height: 100vh; */    /*Chỉ nên dùng cho 1 cái banner */
+}
+
+.about .about__content-heading{
+    font-size: 3rem;
+    line-height: 2.5rem;
+}
+
+.about .about__content .about__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1.25rem 0 1.5rem;
+}
+
+.about .about__content .about__divider .about__divider-line{
+  
+}
+
+.about .about__content .about__content-text{
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.about .about__content .about__content-button{
+    margin-top: 2.5rem;
+}
+.about .about__content-button .button__link{
+    display: inline-block;          /*Do <a> là thẻ inline (không set được height, margin ,padding)*/
+    border: 0.125rem solid ;
+    border-radius: 10px;
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+}
+.about .about__content-button .button__link:hover{
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #212529;
+}
+
+
+/* ====================== 6, Contact ====================== */
+.contact{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    color: #2c3e50;
+    padding: 6rem 0;
+}
+
+.contact .contact__content-heading{
+    font-size: 3rem;
+    line-height: 2.5rem;
+}
+
+.contact .contact__content .contact__divider .contact__divider-icon {
+    color: #2c3e50 ;
+}
+.contact .contact__content .contact__divider .contact__divider-line{
+    background-color: #2c3e50 ;
+}
+
+.contact .contact__content .contact__form-input{
+    /* display: flex; */
+}
+
+.contact .contact__content .contact__form-input label {
+    opacity: 0;
+}
+.contact .contact__content .contact__form-input input, textarea{
+    width: 100%;
+    border: none;
+    font-size: 1.5rem;
+    resize: none;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #d8dadd;
+
+}
+.contact .contact__content .contact__form-input input:focus, textarea:focus{
+    outline: 0; /* bỏ border khi bấm vào input*/
+}
+
+.contact .contact__content .contact__form-input:last-child{
+
+}
+
+.contact .contact__content .contact__form-btn-submit {
+    color: #fff;
+    background-color: #1abc9c;
+    border: 0.5rem #1abc9c;
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    border-radius: 0.5rem;
+    box-shadow: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact .contact__content .contact__form-btn-submit:hover{
+    background-color: #159a80;
+    border-color: #148f77;
+}
+
+
+
+/* ====================== 7, Footer ====================== */
+.footer{
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 5rem 0 5rem 0;
+    text-align: center;
+}
+
+.footer .footer__content h4{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem ;
+}
+
+.footer .footer__content .footer__social-link{
+    font-size: 1.25rem;
+    width: 3.25rem;
+    height: 3.25rem;
+
+    background-color: #2c3e50;
+    color: #f8f9fa;
+
+    border-radius: 100%;
+    border: 0.15rem solid;
+    border-color: #f8f9fa;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin-bottom: 1rem;
+
+    /* Set tag parent position:relative
+        Set tag child position absolute
+        top: 50%
+        left: 50% 
+        transform: translate(-50%, -50%)
+
+        == line-height: = width của cái muốn căn giữa
+        == display flex 
+            margin: auto 
+    */
+}
+
+.footer .footer__content .footer__social-link:hover{
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.footer .footer__content .footer__content-text{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.footer .footer__content .footer__content-text a{
+    color: #1abc9c;
+}
+
+.footer .footer__content .footer__content-text a:hover{
+    color: #117964;
+    text-decoration: underline;
+}
+
+
+/* ====================== 8, Copyright ====================== */
+.copyright{
+    background-color: #1a252f;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+
+
+
+/* ====================== 9, Media screen settings ====================== */
+
+@media screen and (max-width: 992px) {
+    /* Header */
+    .header .header__menu .header__menu-list{
+        display: none ;
+    }
+    .header .header__menu .header__menu-bar{
+        display: block ;
+        font-size: 80%;
+        padding: 0.5rem 0.75rem;
+        background-color: #1abc9c;
+        font-weight: 700;
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+
+    .header .header__menu .header__menu-bar:focus{
+        background-color: #148f77 ;
+    }
+   
+}
+
+@media screen and (max-width: 991px) {
+
+    /* Header */
+    .header .header__menu .header__menu-logo {
+        font-size: 1.5rem ;
+    }
+
+    /* Banner */
+    .banner .banner__heading {
+        font-size: 2.75rem ;
+        line-height: 2rem ;
+    }
+
+    .banner .banner__infor .banner__infor-avatar {
+        width: 12rem ;
+        margin-bottom: 2rem ;
+    }
+
+    /* Portfolio */
+    .portfolio{
+        padding: 3.75rem 0 ;
+    }
+    .portfolio .portfolio__content .portfolio__content-heading {
+        font-size: 2rem ;
+        line-height: 1.75rem ;
+    }
+
+    /* About */
+    .about{
+        padding: 3.75rem 0 ;
+    }
+    .about .about__content-heading {
+        font-size: 2.25rem ;
+        line-height: 2rem ;
+    }
+
+    .about .about__content .about__content-text {
+        font-size: 1rem ;
+        margin-bottom: 1.5rem ;
+    }
+
+    .about .about__content-button .button__link {
+        font-size: 1rem ;
+    }
+    /* Contact */
+
+    .contact{
+        padding: 3.75rem 0 ;
+    }
+
+    .contact .contact__content-heading {
+        font-size: 2.5rem ;
+        line-height: 2rem ;
+    }
+
+    .contact .contact__content .contact__form-input input, textarea {
+        font-size: 1.25rem ;
+    }
+
+    .contact .contact__content .contact__form-btn-submit {
+        font-size: 1rem ;
+    }
+
+    /* Footer */
+    .footer{
+        padding: 3.75rem 0 ;
+    }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+    /* Header */
+    .header .header__menu .header__menu-logo{
+        font-size: 1.25rem ;
+    }
+
+    /* Banner */
+    .banner .banner__heading{
+        font-size: 2rem ;
+        line-height: 1.5rem ;
+    }
+
+    .banner .banner__infor .banner__subheading{
+        font-size: 1.2rem ;
+    }
+
+    .banner .banner__infor{
+        padding-top: 2rem ;
+    }
+
+    .banner .banner__infor .banner__infor-avatar {
+        width: 10rem ;
+        margin-bottom: 1.5rem ;
+    }
+
+    /* Portfolio */
+    .portfolio{
+        padding: 3rem 0 ;
+    }
+
+    .portfolio .portfolio__content .portfolio__content-heading {
+        font-size: 1.75rem ;
+        line-height: 1.5rem ;
+    }
+
+    /* About */
+    .about{
+        padding: 3rem 0 ;
+    }
+    .about .about__content-heading {
+        font-size: 1.75rem ;
+        line-height: 1.5rem ;
+    }
+
+    .about .about__content .about__content-text {
+        font-size: 1rem ;
+        margin-bottom: 0.5rem ;
+    }
+
+    .about .about__content-button .button__link {
+        font-size: 0.75rem ;
+    }
+
+    /* Contact */
+    .contact{
+        padding: 3rem 0 ;
+    }
+    .contact .contact__content-heading {
+        font-size: 1.75rem ;
+        line-height: 1.5rem ;
+    }
+
+    .contact .contact__content .contact__form-input input, textarea {
+        font-size: 0.8rem ;
+    }
+
+    
+    .contact .contact__content .contact__form-btn-submit {
+        padding: 0.5rem 1.25rem ;
+        font-size: 0.75rem ;
+        margin-bottom: 1.5rem ;
+    }
+
+    /* Footer */
+    .footer{
+        padding: 2rem 0 ;
+    }
+
+    .footer .footer__content h4 {
+        font-size: 1rem ;
+        margin-bottom: 1rem ;
+    }
+
+
+    .footer .footer__content .footer__content-text {
+        font-size: 1rem;
+    }
+
+}

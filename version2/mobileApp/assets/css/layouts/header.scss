@@ -1,0 +1,68 @@
+/*=================================================== 2, Header ===================================================*/
+.header {
+  padding: 1rem 0.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo {
+      .menu-logo__link {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: $color-primary;
+
+        &:hover {
+          color: #0042a6;
+        }
+      }
+    }
+
+    &-collapse {
+      display: flex;
+      align-items: center;
+
+      .menu-collapse__list {
+        display: flex;
+
+        .list__item {
+          .list__item-link {
+            color: $color-black-50;
+            font-weight: 500;
+
+            &:hover {
+              color: $color-black-70;
+            }
+
+            i {
+              font-size: 0.65rem;
+            }
+          }
+        }
+      }
+      .menu-collapse__btn {
+        margin-left: 4rem;
+        padding: 0.75rem 2rem;
+        color: $color-white;
+        background-color: $color-primary;
+        border-color: $color-primary;
+        border-radius: 50rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        border: none;
+
+        &:hover {
+          color: $color-white;
+          background-color: #0052cc;
+          border-color: #004dbf;
+        }
+      }
+    }
+  }
+}

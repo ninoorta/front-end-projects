@@ -1,0 +1,10 @@
+@mixin cover-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ===== Usage ===== */
+div {
+  // @include cover-background;
+}

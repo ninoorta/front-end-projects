@@ -1,0 +1,727 @@
+/* 
+
+Theme name: Creative
+Theme description:
+Author: Pham Anh Tuan
+Version: 1.0.0
+*/
+/* min font-size: 12px */
+/*
+    ============================ Table of contents =============================
+    1, Reset css
+    2, Header 
+    3, Banner
+    4, About
+    5, Service
+    6, Portfolio
+    7, Contact
+    8, Action
+    9, Footer
+    10, Media queries
+
+
+*/
+
+/* ============================ 1, Reset css ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather Sans", "-apple-system", "BlinkMacSystemFont",
+    "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.divider-general {
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #f4623a;
+  margin: 1.5rem 0;
+}
+
+/* ============================ 2, Header ============================= */
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: none;
+  background-color: transparent;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+.header * {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header .header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header .header__menu .header__menu-btn {
+  display: none;
+}
+
+.header .header__menu .header__menu-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.header .header__menu .header__menu-logo a:hover {
+  color: #fff;
+}
+
+.header .header__menu .header__menu-list {
+  display: flex;
+}
+
+.header .header__menu .header__menu-list .list-item {
+  padding-left: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.header .header__menu .header__menu-list .list-item .list-item-link:hover {
+  color: #fff;
+}
+
+/* ============================  Media queries for header ============================= */
+@media screen and (max-width: 991px) {
+  .header .header__menu .header__menu-list {
+    display: none;
+  }
+
+  .header {
+    background-color: #fff;
+  }
+
+  .header * {
+    color: #212529;
+  }
+  .header .header__menu .header__menu-btn {
+    display: block;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border: 0.05rem solid #e3ebf3;
+    border-radius: 0.25rem;
+  }
+
+  .header .header__menu .header__menu-btn i {
+    color: #7e8c9b;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .header .header__menu .header__menu-logo {
+    font-size: 1.5rem;
+  }
+
+  .header .header__menu .header__menu-btn i {
+    font-size: 1rem;
+  }
+}
+
+/* ============================ 3, Banner ============================= */
+.banner {
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(92, 77, 66, 0.8) 0%,
+      rgba(92, 77, 66, 0.8) 100%
+    ),
+    url("../images/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.banner .banner__content {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.banner .banner__content .banner__content-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.banner .banner__content .banner__content-header .banner__content-title {
+  /* margin-bottom: 1.5rem; */
+  font-size: 4rem;
+}
+
+.banner .banner__content .banner__content-intro {
+  width: 65%;
+}
+
+.banner .banner__content .banner__content-intro .banner__content-text {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.25rem;
+  margin-bottom: 5.5rem;
+  margin-top: 0.5rem;
+}
+
+.banner .banner__content .banner__content-btn {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #f4623a;
+  border-radius: 2rem;
+}
+
+.banner .banner__content .banner__content-btn:hover {
+  color: #fff;
+  background-color: #f24516;
+  border-color: #ee3e0d;
+}
+
+/* ============================  Media queries for banner ============================= */
+@media screen and (max-width: 991px) {
+  .banner .banner__content .banner__content-header .banner__content-title {
+    /* margin-bottom: 1rem; */
+    font-size: 2.5rem;
+  }
+
+  .banner .banner__content .banner__content-intro .banner__content-text {
+    font-size: 1.25rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .banner .banner__content .banner__content-btn {
+    padding: 1rem 1.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .banner .banner__content .banner__content-intro {
+    width: 100%;
+  }
+  .banner .banner__content .banner__content-header .banner__content-title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .banner .banner__content .banner__content-header .content-header__divider {
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .banner .banner__content .banner__content-intro .banner__content-text {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  .banner .banner__content .banner__content-intro .banner__content-text {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .banner .banner__content .banner__content-btn {
+    padding: 1rem 1.2rem;
+    font-size: 0.8em;
+  }
+}
+
+/* ============================ 4, About ============================= */
+.about {
+  padding: 8rem 0;
+  background-color: #f4623a;
+  color: #fff;
+}
+
+.about .about__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.about .about__content .about__content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .about__content .about__content-header .about__content-title {
+  font-size: 2.5rem;
+}
+
+.about .about__content .about__content-header .content-header__divider {
+  background-color: #fff;
+}
+
+.about .about__content .about__content-intro .about__content-text {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.about .about__content .about__content-intro {
+  /* margin-top: 2rem; */
+}
+
+.about .about__content .about__content-intro .about__content-text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.about .about__content .about__content-intro .about__content-btn {
+  border: none;
+  border-radius: 10rem;
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+.about .about__content .about__content-intro .about__content-btn:hover {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+/* ============================  Media queries for about ============================= */
+@media screen and (max-width: 991px) {
+  .about {
+    padding: 5rem 0;
+  }
+  .about .about__content .about__content-header .about__content-title {
+    font-size: 2rem;
+  }
+  .about .about__content .about__content-intro .about__content-text {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .about .about__content .about__content-intro .about__content-btn {
+    padding: 1rem 1.75rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .about {
+    padding: 2.5rem 0;
+  }
+  .about .about__content {
+    width: 100%;
+  }
+
+  .about .about__content .about__content-header .content-header__divider {
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .about .about__content .about__content-intro .about__content-text {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+  .about .about__content .about__content-intro .about__content-btn {
+    padding: 1rem 1.25rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* ============================ 5, Service ============================= */
+.service {
+  display: flex;
+  justify-content: center;
+  padding: 5.5rem 0;
+}
+
+.service .service__content .service__content-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.service .service__content .service__content-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.service .service__list {
+  margin-top: 2rem;
+}
+
+.service .service__list .service__list-item {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.service .service__list .service__list-item i {
+  color: #f4623a;
+  font-size: 4rem;
+  margin-bottom: 1.25rem;
+}
+
+.service .service__list .service__list-item .service__content-head-text {
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.service .service__list .service__list-item .service__content-text {
+  color: #6c757d;
+}
+
+/* ============================  Media queries for service ============================= */
+
+@media screen and (max-width: 991px) {
+  .service {
+    padding: 3.5rem 0;
+  }
+  .service .service__content .service__content-title {
+    font-size: 2.5rem;
+  }
+  .service .service__list .service__list-item i {
+    color: #f4623a;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .service {
+    padding: 2.25rem 0;
+  }
+  .service .service__content .service__content-title {
+    /* font-size: 1rem; */
+  }
+  .service .service__content .service__content-header .content__header-divider {
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.5rem 0;
+  }
+  .service .service__list .service__list-item i {
+    color: #f4623a;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .service .service__list .service__list-item .service__content-head-text {
+    font-size: 2rem;
+  }
+  .service .service__list .service__list-item .service__content-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* ============================ 6, Portfolio ============================= */
+.portfolio {
+}
+
+.portfolio .portfolio__content .portfolio__list .portfolio__list-item {
+  padding: 0;
+}
+
+.portfolio .portfolio__content .portfolio__list .portfolio__list-item img {
+  display: block;
+  width: 100%;
+}
+
+.portfolio
+  .portfolio__content
+  .portfolio__list
+  .portfolio__list-item
+  .portfolio__item-link {
+  position: relative;
+  display: block;
+}
+
+.portfolio
+  .portfolio__content
+  .portfolio__list
+  .portfolio__list-item
+  .portfolio__item-link
+  .portfolio__item-box:hover {
+  opacity: 1;
+}
+
+.portfolio
+  .portfolio__content
+  .portfolio__list
+  .portfolio__list-item
+  .portfolio__item-link
+  .portfolio__item-box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: rgba(244, 98, 58, 0.9);
+  transition: opacity 0.25s ease;
+  text-align: center;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portfolio
+  .portfolio__content
+  .portfolio__list
+  .portfolio__list-item
+  .portfolio__item-link:hover {
+  color: #fff;
+}
+
+.portfolio
+  .portfolio__content
+  .portfolio__list
+  .portfolio__list-item
+  .portfolio__item-box
+  .portfolio__box-category {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.portfolio
+  .portfolio__content
+  .portfolio__list
+  .portfolio__list-item
+  .portfolio__item-box
+  .portfolio__box-name {
+  font-size: 1.25rem;
+}
+
+/* ============================ 7, Action ============================= */
+.action {
+  background-color: #343a40;
+  padding: 5.5rem 0;
+  color: #fff;
+}
+
+.action .action__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.action .action__content .action__content-tile {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.action .action__content .action__content-link {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border: none;
+  color: #212529;
+  background-color: #f8f9fa;
+  border-radius: 15rem;
+}
+
+.action .action__content .action__content-link:hover {
+  color: #212529;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+
+/* ============================  Media queries for action ============================= */
+
+@media screen and (max-width: 991px) {
+  .action {
+    padding: 3.5rem 0;
+  }
+  .action .action__content .action__content-tile {
+    margin-bottom: 1.75rem;
+    font-size: 2rem;
+  }
+  .action .action__content .action__content-link {
+    padding: 1rem 2rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .action {
+    padding: 3rem 0;
+  }
+  .action .action__content .action__content-tile {
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+  }
+  .action .action__content .action__content-link {
+    padding: 1rem 1.25rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* ============================ 8, Contact ============================= */
+
+.contact {
+  padding: 5rem 0;
+}
+
+.contact .contact__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .contact__content .contact__intro {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact .contact__content .contact__intro .contact__intro-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .contact__intro .contact__intro-wrapper .contact__intro-title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+}
+
+.contact .contact__intro .contact__intro-wrapper .contact__intro-text {
+  color: #6c757d;
+  font-size: 1.5rem;
+}
+
+.contact .contact__content .contact__content-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2.5rem;
+}
+
+.contact .contact__content .contact__content-info i {
+  color: #6c757d;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact .contact__content .contact__content-info .contact__content-link {
+  color: #f4623a;
+  font-size: 1.5rem;
+}
+
+.contact .contact__content .contact__content-info .contact__content-link:hover {
+  color: #d6370c;
+  text-decoration: underline;
+}
+
+/* ============================  Media queries for action ============================= */
+
+@media screen and (max-width: 991px) {
+  .contact {
+    padding: 4.5rem 0;
+  }
+
+  .contact .contact__intro .contact__intro-wrapper .contact__intro-title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .contact
+    .contact__content
+    .contact__intro
+    .contact__intro-wrapper
+    .intro-wrapper_divider {
+    height: 0.2rem;
+  }
+
+  .contact .contact__content .contact__content-info i {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact .contact__content .contact__content-info {
+    margin: 2rem;
+  }
+
+  .contact .contact__content .contact__intro .contact__intro-text {
+    font-size: 1.3rem;
+  }
+
+  .contact .contact__content .contact__content-info .contact__content-phone,
+  .contact .contact__content .contact__content-info .contact__content-link {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .contact {
+    padding: 3rem 0;
+  }
+  .contact .contact__intro .contact__intro-wrapper .contact__intro-title {
+    font-size: 2rem;
+  }
+  .contact .contact__content .contact__intro .contact__intro-text {
+    font-size: 1.2rem;
+  }
+
+  .contact .contact__content .contact__content-info .contact__content-phone,
+  .contact .contact__content .contact__content-info .contact__content-link {
+    font-size: 1.2rem;
+  }
+
+  .contact .contact__content .contact__content-info i {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* ============================ 9, Footer ============================= */
+.footer {
+  padding: 2.5rem;
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+.footer .footer__content {
+  text-align: center;
+}
+
+.footer .footer__content .footer__content-text {
+  color: #6c757d;
+}

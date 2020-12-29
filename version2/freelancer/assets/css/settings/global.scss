@@ -1,0 +1,91 @@
+/*
+Theme name: Freelancer
+Theme description:
+Author: PHAM ANH TUAN
+Version: 2.0.0
+
+============================================= TABLE OF CONTENTS =============================================
+1, Reset css
+2, Header 
+3, Banner
+4, Portfolio
+5, About
+6, Contact
+7, Footer
+8, Copyright
+*/
+
+/* ============================================= 1, Reset Css ============================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+html {
+  scroll-behavior: smooth;
+}
+ul li {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+}
+img {
+  display: block;
+  width: auto;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 1.25rem 0 1.5rem;
+}
+.divider__line {
+  max-width: 7rem;
+  height: 0.25rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+.divider__line:first-child {
+  margin-right: 1rem;
+}
+.divider__line:last-child {
+  margin-left: 1rem;
+}
+.divider__icon {
+  font-size: 2rem;
+}
+.page-section {
+  padding: 3.5rem 0;
+  text-align: center;
+}
+.modal-open {
+  overflow: hidden;
+}
+.fade {
+  opacity: 0.5 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  transition: opacity 0.15s linear;
+}
+.active {
+  display: block;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: #1abc9c;
+  font-size: 1rem;
+}
+.active:hover{
+  color: #fff;
+}

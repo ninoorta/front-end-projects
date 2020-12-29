@@ -1,0 +1,51 @@
+/* ============================================= 2, Banner ============================================= */
+.banner {
+  background-color: $color-primary;
+  text-align: center;
+  padding: 5.5rem 0;
+  height: 100vh;
+  position: relative;
+  z-index: 3;
+
+  .divider__line {
+    background-color: $color-white;
+  }
+  .divider__icon {
+    color: $color-white;
+  }
+
+  img {
+    width: 15rem;
+    @include max-breakpoint(465){
+      width: 10rem;
+    }
+  }
+  &__heading {
+    color: $color-white;
+    font-size: 3rem;
+    line-height: 2.75rem;
+    margin-top: 2rem;
+    font-weight: bold;
+  }
+  &__subheading {
+    font-size: 1.5rem;
+    color: $color-white;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .banner {
+    img: {
+      width: 12rem;
+    }
+  }
+}
+@media screen and (max-width: 426px) {
+  .banner {
+    padding: 1.5rem 0;
+
+    &__subheading {
+      font-size: 1.25rem;
+    }
+  }
+}

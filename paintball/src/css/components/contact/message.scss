@@ -1,0 +1,52 @@
+/*========================================================== Contact page, Message Form ==========================================================*/
+.contact-message {
+  padding: 6.875rem 0 4.375rem 0;
+
+  @include max-breakpoint(426) {
+    padding: 4rem 1rem;
+  }
+
+  &__heading {
+    color: $color-primary;
+    font-size: 1.875rem;
+    font-family: "Bungee", cursive;
+
+    @include max-breakpoint(426) {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__form {
+    margin-top: 3rem;
+    &-input {
+      width: 100%;
+      outline: none;
+      resize: none;
+      color: #2d2e30;
+      background-color: rgba(249, 227, 215, 1);
+      border-color: #f9e3d7;
+      border: none;
+      padding: 0.75rem;
+      border-radius: 0.25rem;
+    }
+
+    textarea {
+      @include max-breakpoint(426) {
+      }
+    }
+
+    &-btn {
+      @extend .contact-message__form-input;
+      color: $color-white;
+      background-color: $color-primary;
+      font-family: "Rubik", Arial, Tahoma, sans-serif;
+      padding: 0.75rem 1.25rem;
+      width: unset;
+    }
+  }
+}
+
+iframe {
+  margin-top: 4rem;
+  height: 600px;
+}

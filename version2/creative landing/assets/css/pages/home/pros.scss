@@ -1,0 +1,45 @@
+/*=================================== 5, Pros ===================================*/
+.pros {
+  &__item {
+    color: $color-black;
+
+    &-icon {
+      width: 4rem;
+    }
+
+    &-heading {
+      .item-heading__title {
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-align: left;
+        margin: 1.5rem 0;
+      }
+    }
+
+    &-info {
+      .item-info__text {
+        color: #636363;
+        text-align: left;
+        line-height: 1.2;
+        font-size: 1.1rem;
+
+        @include max-breakpoint(426){
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  &-waves {
+    height: 260px;
+    position: relative;
+
+    svg {
+      height: 100%;
+      bottom: 0rem;
+      left: 50%;
+      position: absolute;
+      width: 100%;
+      transform: translateX(-50%);
+    }
+  }
+}

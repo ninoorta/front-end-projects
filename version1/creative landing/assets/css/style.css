@@ -1,0 +1,723 @@
+/* 
+Theme name: Creative Landing
+Theme description: 
+Author: PHAM ANH TUAN
+Version: 1.0.0
+
+=============================== TABLE OF CONTENTS =============================== 
+1, Reset Css
+2, Header
+3, Banner
+4, Pros
+5, Screens
+6, Guide
+7, Trial
+8, Events
+9, Sponsors
+10, Footer
+111, Social
+
+*/
+
+/* =============================== 1, Reset Css ===============================  */
+*{
+    margin: 0;
+    padding: 0em;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+img{
+    display: block;
+}
+.middle{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* =============================== 2, Header ===============================  */
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        background: transparent;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+    }
+    .header .header__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header .header__menu .header__menu-logo{
+        display: flex;
+        align-items: center;
+    }
+    .header .header__menu .header__menu-logo .logo__link-wrapper svg path{
+        fill: #ffffff;
+    }
+
+    
+    .header .header__menu-nav{
+        display: flex;
+    }
+    .header .header__menu .header__menu-nav .menu-nav__item{
+        margin-right: 2rem;
+        letter-spacing: 0.1rem;
+    }
+    .header__menu-nav #home .nav__item-link{
+        color: rgba(255,255,255,.5);
+    }
+    .header__menu-nav .menu-nav__item .nav__item-link, .social__item-link{
+        color: #fff;
+        font-size: 0.9rem;
+    }
+    .header .header__menu-social{
+        display:flex;
+    }
+    .header .header__menu-social .menu-social__item{
+        margin-left: 2rem;
+    }
+    .menu-social__item .social__item-link:hover, .menu-nav__item .nav__item-link:hover{
+        color: rgba(255,255,255,.5);
+    }
+
+    .header .header__menu .header__menu-btn{
+        display: none;
+    }
+    @media screen and (max-width: 991px){
+        .header .header__menu .header__menu-btn{
+            display: block;
+            border: none;
+            background: transparent;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        .header .header__menu .header__menu-nav ,
+        .header .header__menu .header__menu-social{
+            display: none;
+        }
+
+
+    }
+
+/* =============================== 3, Banner ===============================  */
+    .header-wrapper{
+        background: linear-gradient(to left,#6442ff96 0%,#9012fe9e 100%), url(../images/rawpixel-com-594859-unsplash-min.png);
+        position: relative;
+        /* opacity: 0.75; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+    }  
+
+    .banner{
+        padding: 6rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: "Poppins";
+    }
+    .banner .banner__image img{
+        width: 100%;
+    }
+    .banner .banner__content .banner__content-title{
+        font-weight: 700;
+        font-size: 3.5rem;
+        color: #fff;
+        text-align: left;
+    }
+    .banner .banner__content .banner__content-info{
+        margin-top: 1.5rem;
+        font-size: 1.25rem;
+        text-align: left;
+    }
+    .banner .banner__content .banner__content-btn{
+        display: inline-block;
+        margin: 3rem 0;
+        font-weight: 600;
+    }
+    .banner__content-btn #buy{
+        color: #ffffff;
+        background-color: #e9168c;
+        border-color: #e9168c;
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        margin-right: 1rem;
+        transition: linear 0.3s;
+    }
+    #buy:hover{
+        background-color: #dc097f;
+        border-color: #dc097f;
+    }
+    .banner__content-btn #more{
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        color: #303133;
+        background-color: #ffffff;
+        border-color: #ffffff;
+        transition: all 0.3s;
+        border: 1px solid;
+    }
+    #more:hover{
+        color: #ffffff;
+        background-color: transparent;
+        border-color: #ffffff;
+    }
+    
+    .banner-waves{
+        position: relative;
+        width: 100%;
+        height: 260px;
+        margin-top: -22rem;
+    }
+    .banner-waves svg{
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        position: absolute;
+        transform: translatex(-50%);
+    }
+   
+    @media screen and (max-width: 991px){
+        .banner-waves{
+            margin-top: -19rem;
+        }
+        .banner .banner__content .banner__content-title {
+            font-size: 2.5rem;
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .banner .banner__content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        .banner .banner__content .banner__content-title, .banner .banner__content .banner__content-info{
+            text-align: center;
+        }
+    
+        .banner .banner__content .banner__content-btn{
+            /* margin-top: 2rem; */
+        }
+
+        .banner .banner__content .banner__content-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        .banner__content-btn #buy{
+            margin-right: 0;
+            margin-bottom: 2rem;
+        }
+       
+    }
+
+    @media screen and (max-width: 426px){
+        .banner-waves {
+            margin-top: -22rem;
+        }
+        .banner .banner__content .banner__content-title{
+            font-size: 2rem;
+        }
+        .banner .banner__content .banner__content-info{
+            font-size: 1rem;
+        }
+      
+    }
+
+
+/* =============================== 4, Pros ===============================  */
+    .pros{
+        background-color: #fff;
+        padding: 6rem 0;
+    }
+
+    .pros .pros__item{
+        color: #303133;
+    }
+    .pros .pros__item .pros__item-icon{
+        width: 4rem;
+    }
+    .pros .pros__item .pros__item-heading .item-heading__title{
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-align: left;
+        margin: 1.5rem 0;
+    }
+    .pros__item .pros__item-info .item-info__text{
+        color: #636363;
+        text-align: left;
+        line-height: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    
+    .pros__waves{
+        height: 260px;
+        position: relative;
+    }
+    .pros__waves svg{
+        height: 100%;
+        bottom: 0rem;
+        left: 50%;
+        position: absolute;
+        width: 100%;
+        transform: translatex(-50%);
+    }
+
+    @media screen and (max-width: 991px){
+        .pros .pros__item {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+/* =============================== 5, Screens ===============================  */
+    .screens{
+        padding: 6rem 0;
+        background-color: #1b1d1f;
+    }
+    .screens .screens-slider{
+        margin-top: -15rem;
+    }
+    .screens-slider__item .slider__item-link{
+        display: block;
+        position: relative;
+    }
+    .screens-slider__item .slider__item-link .item-link__layout{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #db1b92;
+        align-items: center;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .item-link__layout i{
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .slider__item-link img{
+        border-radius: .25rem;
+    }
+
+    .screens-slider__item .slider__item-link:hover .item-link__layout{
+        opacity: 0.9;
+    }
+    
+    /* <-- Owl carousel  --> */
+    .screens .screens-slider .owl-dots{
+        margin-top: 3rem !important;
+    }
+
+    .screens .screens-slider .owl-dots .owl-dot span{
+        background: #869791 !important;
+    }
+    .screens .screens-slider .owl-dots .active span{
+        background: #D6D6D6 !important;
+    }
+     /* <-- Owl carousel  --> */
+    @media screen and (max-width: 769px){
+        .screens .screens-slider{
+            margin-top: -12rem;
+        }
+    }
+
+    @media screen and (max-width: 426px){
+        .screens .screens-slider{
+            margin-top: -6rem;
+        }
+    }
+
+/* =============================== 6, Guide ===============================  */
+    .guide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 6rem 0;
+    }
+    .guide .guide__content .guide__content-heading{
+        font-family: "Poppins";
+    }
+    .guide .guide__content .guide__content-heading .content-heading__title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+
+    .guide__content-heading .content-heading__text{
+        color: #777;
+        font-size: 1.5rem;
+        padding: 0 6rem;
+    }
+
+    .guide .guide__content .guide__content-video{
+        margin-top: 2rem;
+    }
+
+    .guide__content-video .content-video__wrapper .video__wrapper-link img{
+        width: 100%;
+        border-radius: 0.25rem;
+    }
+
+    .video__wrapper-link{
+        display:block;
+        position: relative;
+    }
+    
+    .video__wrapper-link .wrapper-link__icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 7rem;
+        width: 7rem;
+    }
+    .video__wrapper-link .wrapper-link__icon i{
+        font-size: 1.5rem;
+        color: #303133;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .video__wrapper-link .wrapper-link__icon .link__icon-outline{
+        display: block;
+        background: #fff;
+        box-shadow: 0 0 0 10px rgba(255,255,255,0.1);
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        transition: all 0.3s;
+    }
+
+    
+
+    .video__wrapper-link .wrapper-link__icon:hover  .link__icon-outline{
+       transform: scale(1.2);
+    }
+
+    @media screen and (max-width: 991px){
+        .video__wrapper-link .wrapper-link__icon .link__icon-outline{
+            height:5rem;
+            width:5rem;
+        }
+        .video__wrapper-link .wrapper-link__icon {
+            height:5rem;
+            width:5rem;
+        }
+
+
+    }
+
+    @media screen and (max-width: 769px){
+        .guide__content-heading .content-heading__text {
+            color: #777;
+            font-size: 1.25rem;
+            padding: 0;
+        }
+
+        .guide .guide__content .guide__content-heading .content-heading__title {
+            margin-bottom: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 426px){
+        .guide__content-heading .content-heading__text {
+            font-size: 1rem;
+        }
+    }
+   
+
+/* =============================== 7, Trial ===============================  */
+    .trial{
+        background: linear-gradient(to left,#6442ff96 0%,#9012fe9e 100%), url(../images/rawpixel-com-594859-unsplash-min.png);
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        padding: 6rem 0;
+        color: #fff;
+        text-align: center;
+        font-family: Poppins;
+    }
+
+    .trial__content .trial__content-heading .content-heading__title{
+        letter-spacing: .1rem;
+        font-weight: 700;
+    }
+
+    .trial__content-heading .content-heading__info .heading__info-title{
+        padding: 0 4rem;
+        margin: 2rem 0;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+
+    .trial__content-form{
+        padding: 0 6rem;
+    }
+  
+
+    .trial__content-form .content-form__item input{
+        width: 100%;
+        display: block;
+        margin-top: 0.75rem;
+        padding: 1rem 0.75rem;
+        border-style: solid;
+        border-radius: 0.25rem;
+        border: 1px solid transparent;
+        margin: 1rem 0;
+        
+    }
+    .trial__content-form .content-form__item input:focus{
+        outline: none;
+        border-color: #e9168c;
+    }
+    .trial__content-form .content-form__item input::placeholder{
+        font-weight: 700;
+        color: #BFBFBF;
+    }
+
+    .trial__content-form .content-form__btn{
+        margin-top: 1.5rem;
+        font-weight: 700;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+        border-radius: 0.25rem;
+        background-color: #e9168c;
+        padding: 1.25rem 2.75rem;
+        box-shadow: none;
+        border: none;
+        outline: none;
+    }
+    .trial__content-form .content-form__btn:hover{
+        background-color: #dc097f;
+    }
+    .trial__content-form .content-form__btn:active{
+        color: #e9168c;
+        background-color: #dc097f;
+    }
+
+    .trial .trial-waves{
+        position: relative;
+        height: 20rem;
+    }
+    .trial .trial-top-waves svg{
+        width: 100%;
+        transform: translatex(-50%) scaley(-1);
+        height: 100%;
+        margin-top: -7rem;
+        position: absolute;
+    }
+    .trial .trial-bottom-waves {
+        transform: scaleX(-1) translateZ(0);
+    }
+    .trial .trial-bottom-waves svg{
+        height: 100%;
+        left: 50%;
+        width: 100%;
+        position: absolute;
+        transform: translatex(-50%);
+        margin-top: 7rem;
+    }
+
+
+    @media screen and (max-width:769px){
+        .trial__content-heading .content-heading__info .heading__info-title {
+            font-size: 1.5rem;
+        }
+
+        .trial__content-form .content-form__btn {
+            /* font-size: 0.7rem; */
+        }
+        .trial__content-form{
+            padding: 0 4rem;
+        }
+    }
+
+    @media screen and (max-width:426px){
+        .trial__content-heading .content-heading__info .heading__info-title {
+            font-size: 1.25rem;
+        }
+        .trial__content-form {
+            padding: 0;
+        }
+        .trial .trial-waves{
+            height: 12rem;
+        }
+
+    }
+
+
+
+
+
+/* =============================== 8, Events ===============================  */
+    .events{
+        padding: 6rem 0;
+        font-family: Poppins;
+    }
+    .events .events__item .events__item-date{
+        font-weight: 700;
+    }
+    .events .events__item .events__item-heading{
+        color: #303133;
+        font-weight: bold;
+        font-size: 1.85rem;
+        margin: 1rem 0;
+    }
+    .events .events__item .events__item-heading:hover{
+        color: #e9168c;
+    }
+    .events .events__item .events__item-info{
+        color: #777;
+        line-height: 1.25rem;
+    }
+
+     /* <-- Owl carousel  --> */
+     .events .events-slider .owl-dots{
+        margin-top: 2rem !important;
+    }
+
+    .events .events-slider .owl-dots .owl-dot span{
+        background: #869791 !important;
+    }
+    .events .events-slider .owl-dots .active span{
+        background: #D6D6D6 !important;
+    }
+     /* <-- Owl carousel  --> */
+
+
+    
+
+
+    @media screen and (max-width: 580px){
+        .events{
+            text-align: center;
+        }
+        .events .events__item .events__item-heading{
+            font-size: 1.65rem;
+        }
+    }
+
+
+/* =============================== 9, Sponsors ===============================  */
+    .sponsors{
+        padding: 6rem 0;
+        background-color: #f7f7f7;
+    }
+
+
+/* =============================== 10, Footer ===============================  */
+    .footer{
+        padding: 4rem 0;
+        background-color: #1b1d1f;
+        font-family: 'Poppins';
+        text-align: left;
+        color: #fff;
+    }
+    .footer .footer__col-title{
+        /* text-align: left; */
+        /* color: #fff; */
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    .footer .footer__col .footer__col-text{
+        /* font-size: 0.8rem; */
+        /* color: #fff; */
+    }
+    .footer .footer__col-list .col-list__item{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
+    .footer .footer__col-list .col-list__item .list__item-link{
+            color: #fff;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+    }
+    .footer .footer__col-list .col-list__item .list__item-link:hover{
+        color: #e9168c;
+    }
+    .col-list__item .list__item-date{
+        font-size: 0.75rem;
+    }
+    .footer__col-tags .col-tags__item .tags__item-link{
+        color: #fff;
+        border: 1px solid  rgba(255,255,255,.25);
+        font-weight: 600;
+        padding: 0.2rem 0.4rem;
+        font-size: 0.8rem;
+        border-radius: 0.5rem;
+    }
+    .footer .footer__col-tags .col-tags__item .tags__item-link:hover{
+        color: #e9168c;
+    }
+    .footer__col-tags{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer__col-tags .col-tags__item{
+        margin: 0 0.25rem 0.5rem 0;
+    }
+
+
+    @media screen and (max-width:991px){
+        .footer .row .col-lg-3:nth-child(3){
+            display: none;
+        }
+    }
+    @media screen and (max-width:768px){
+        .footer .footer__col .footer__col-text{
+            margin-bottom: 1rem;
+        }
+    }
+    @media screen and (max-width: 569px){
+        .footer{
+            display: none;
+        }
+    }
+
+/* =============================== 11, Social ===============================  */
+    .social{
+        padding: 6rem 0;
+        background-color: #141618;
+    }
+    .social .social__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social .social__content .content-item__link{
+        color: #fff;
+        margin-left: 2rem;
+    }
+    .social .social__content .content-item__link:hover{
+        color: #e9168c;
+    }
+   
+

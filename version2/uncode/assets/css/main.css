@@ -1,0 +1,76 @@
+/*
+Theme name: Uncode
+Theme description:
+Author: PHAM ANH TUAN
+Version: 2.0.0
+
+=================================================== TABLE OF CONTENTS ===================================================
+1, Reset Css
+2, Header
+
+*/
+/*=================================================== 1, Reset Css ===================================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none !important; }
+
+ul {
+  margin: 0 !important; }
+  ul li {
+    list-style: none; }
+
+img {
+  display: block;
+  width: 100%; }
+
+/**
+   * @param $direction: horizontal vertical both
+   example : @include center(both) || @include center(horizontal) || @include center(vertical)
+   */
+/* ===== Usage ===== */
+p {
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.1em; }
+
+/* ===== Usage ===== */
+div {
+  background-image: url("cute-doggo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/*=================================================== 2, Header ===================================================*/
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000; }
+  .header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header__menu-logo .menu-logo__link .logo__link-wrapper {
+      position: relative; }
+      .header__menu-logo .menu-logo__link .logo__link-wrapper svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        fill: #fff; }
+    .header__menu-list .menu-list__item .list__item-link:first-child {
+      color: rgba(255, 255, 255, 0.5); }
+
+/*# sourceMappingURL=main.css.map */

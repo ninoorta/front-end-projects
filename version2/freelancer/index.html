@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer</title>
+    <!-- Link Css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Link Bootstrap Css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Link Fontawesome Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <!-- Link Bootstrap Js -->
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Link Jquery to scroll exact position -->
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Start Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__menu">
+                    <div class="header__menu-logo">
+                        <a href="#" class="menu-logo__link">
+                            START BOOTSTRAP
+                        </a>
+                    </div>
+                    <button class="header__menu-btn">
+                        MENU
+                        <i class="fas fa-bars ml-1"></i>
+                    </button>
+                    <ul class="header__menu-list">
+                        <li>
+                            <a href="#banner" style="display: none;" class="active js-scroll-trigger"></a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#portfolio" class="list__item-link js-scroll-trigger">
+                                PORTFOLIO
+                            </a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#about" class="list__item-link js-scroll-trigger">
+                                ABOUT
+                            </a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#contact" class="list__item-link js-scroll-trigger">
+                                CONTACT
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Start Banner -->
+        <article class="banner d-flex align-items-center page-section" id="banner">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Avatar -->
+                <img src="assets/images/avatar.svg" alt="">
+                <!-- Heading -->
+                <h1 class="banner__heading">
+                    START BOOTSTRAP
+                </h1>
+                <!-- Divider -->
+                <div class="divider">
+                    <div class="divider__line">
+
+                    </div>
+                    <div class="divider__icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider__line">
+
+                    </div>
+                </div>
+                <!-- SubHeading -->
+                <p class="banner__subheading">
+
+                    Graphic Artist - Web Designer - Illustrator
+
+                </p>
+            </div>
+        </article>
+        <!-- End Banner -->
+        <!-- Start Portfolio Section -->
+        <section class="portfolio page-section" id="portfolio">
+            <div class="container">
+                <!-- Title -->
+                <h2 class="portfolio__heading">PORTFOLIO</h2>
+                <!-- Divider -->
+                <div class="divider">
+                    <div class="divider__line">
+
+                    </div>
+                    <div class="divider__icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider__line">
+
+                    </div>
+                </div>
+                <!-- Items -->
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="portfolio__item">
+                            <div class="portfolio__item-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="assets/images/cabin.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="portfolio__item">
+                            <div class="portfolio__item-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="assets/images/cake.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="portfolio__item">
+                            <div class="portfolio__item-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="assets/images/circus.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="portfolio__item">
+                            <div class="portfolio__item-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="assets/images/game.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="portfolio__item">
+                            <div class="portfolio__item-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="assets/images/safe.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="portfolio__item">
+                            <div class="portfolio__item-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <img src="assets/images/submarine.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Portfolio Section -->
+        <!-- Start About Section  -->
+        <section class="about page-section" id="about">
+            <div class="container">
+                <!-- Title -->
+                <h2 class="about__heading">ABOUT</h2>
+                <!-- Divider -->
+                <div class="divider">
+                    <div class="divider__line">
+
+                    </div>
+                    <div class="divider__icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider__line">
+
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="row">
+                    <div class="col-lg-4 ml-auto">
+                        <p class="about__text">
+                            Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the
+                            complete source files including HTML, CSS, and JavaScript as well as optional SASS
+                            stylesheets for easy customization.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 mr-auto">
+                        <p class="about__text">
+                            You can create your own custom avatar for the masthead, change the icon in the dividers, and
+                            add your email address to the contact form to make it fully functional!
+                        </p>
+                    </div>
+                </div>
+                <!-- Button -->
+                <button class="about__btn btn">
+                    <a href="#" class="about__btn-link">
+                        <i class="fas fa-download"></i>
+                        Free Download!
+                    </a>
+                </button>
+            </div>
+        </section>
+        <!-- End About Section  -->
+        <!-- Start Contact Section -->
+        <section class="contact page-section" id="contact">
+            <div class="container">
+                <!-- Title -->
+                <h2 class="contact__heading">CONTACT ME</h2>
+                <!-- Divider -->
+                <div class="divider">
+                    <div class="divider__line">
+
+                    </div>
+                    <div class="divider__icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="divider__line">
+
+                    </div>
+                </div>
+                <!-- Form -->
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <form class="contact__form">
+                            <div class="contact__form-input">
+                                <label>Name</label>
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="contact__form-input">
+                                <label>Email Address</label>
+                                <input type="email" placeholder="Email Address">
+                            </div>
+                            <div class="contact__form-input">
+                                <label>Phone Number</label>
+                                <input type="text" placeholder="Phone Number">
+                            </div>
+                            <div class="contact__form-input">
+                                <label>Name</label>
+                                <textarea rows="5" placeholder="Please enter a message"></textarea>
+                            </div>
+                            <div class="contact__form-btn">
+                                <button class="form-btn__submit" type="submit">
+                                    Send
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Start Contact Section -->
+        <!-- Start Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4 class="footer__heading">LOCATION</h4>
+                        <p class="footer__text">
+
+                            2215 John Daniel Drive
+                            <br>
+
+                            Clark, MO 65243
+
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="footer__heading">AROUND THE WEB</h4>
+                        <a href="http://fb.com/phamanhtuan9399" class="footer__link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="footer__link">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="footer__heading">ABOUT FREELANCER</h4>
+                        <p class="footer__text">
+                            Freelance is a free to use, MIT licensed Bootstrap theme created by
+                            <a href="#" class="footer__text-link">Start Bootstrap</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+        <!-- Start Copyright Section -->
+        <div class="copyright">
+            <div class="container">
+                <small>Copyright © PAT Website 2020</small>
+            </div>
+        </div>
+        <!-- End Copyright Section -->
+
+        <!-- Portfolio Modal 1 -->
+        <div class="portfolio__modal" id="modal1">
+            <div class="portfolio__modal-wrapper">
+                <div class="modal-wrapper__content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><svg class="svg-inline--fa fa-times fa-w-11" aria-hidden="true"
+                                focusable="false" data-prefix="fas" data-icon="times" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                </path>
+                            </svg><!-- <i class="fas fa-times"></i> --></span>
+                    </button>
+                    <div class="wrapper__content-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="content-body__heading">LOG CABIN</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider">
+                                        <div class="divider__line">
+
+                                        </div>
+                                        <div class="divider__icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="divider__line">
+
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/images/cabin.png" alt="">
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5 content-body__text">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Mollitia
+                                        neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
+                                        quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                        itaque. Nam.</p>
+                                    <button class="btn btn-primary content-body__btn" data-dismiss="modal">
+                                        <svg class="svg-inline--fa fa-times fa-w-11 fa-fw" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="times" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                            </path>
+                                        </svg>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2 -->
+        <div class="portfolio__modal" id="modal2">
+            <div class="portfolio__modal-wrapper">
+                <div class="modal-wrapper__content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><svg class="svg-inline--fa fa-times fa-w-11" aria-hidden="true"
+                                focusable="false" data-prefix="fas" data-icon="times" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="wrapper__content-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="content-body__heading">TASTY CAKE</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider">
+                                        <div class="divider__line">
+
+                                        </div>
+                                        <div class="divider__icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="divider__line">
+
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/images/cake.png" alt="">
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5 content-body__text">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Mollitia
+                                        neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
+                                        quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                        itaque. Nam.</p>
+                                    <button class="btn btn-primary content-body__btn" data-dismiss="modal">
+                                        <svg class="svg-inline--fa fa-times fa-w-11 fa-fw" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="times" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                            </path>
+                                        </svg>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3 -->
+        <div class="portfolio__modal" id="modal3">
+            <div class="portfolio__modal-wrapper">
+                <div class="modal-wrapper__content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><svg class="svg-inline--fa fa-times fa-w-11" aria-hidden="true"
+                                focusable="false" data-prefix="fas" data-icon="times" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="wrapper__content-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="content-body__heading">CIRCUS TENT</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider">
+                                        <div class="divider__line">
+
+                                        </div>
+                                        <div class="divider__icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="divider__line">
+
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/images/circus.png" alt="">
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5 content-body__text">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Mollitia
+                                        neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
+                                        quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                        itaque. Nam.</p>
+                                    <button class="btn btn-primary content-body__btn" data-dismiss="modal">
+                                        <svg class="svg-inline--fa fa-times fa-w-11 fa-fw" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="times" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                            </path>
+                                        </svg>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4 -->
+        <div class="portfolio__modal" id="modal4">
+            <div class="portfolio__modal-wrapper">
+                <div class="modal-wrapper__content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><svg class="svg-inline--fa fa-times fa-w-11" aria-hidden="true"
+                                focusable="false" data-prefix="fas" data-icon="times" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="wrapper__content-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="content-body__heading">CONTROLLER</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider">
+                                        <div class="divider__line">
+
+                                        </div>
+                                        <div class="divider__icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="divider__line">
+
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/images/game.png" alt="">
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5 content-body__text">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Mollitia
+                                        neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
+                                        quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                        itaque. Nam.</p>
+                                    <button class="btn btn-primary content-body__btn" data-dismiss="modal">
+                                        <svg class="svg-inline--fa fa-times fa-w-11 fa-fw" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="times" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                            </path>
+                                        </svg>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5 -->
+        <div class="portfolio__modal" id="modal5">
+            <div class="portfolio__modal-wrapper">
+                <div class="modal-wrapper__content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><svg class="svg-inline--fa fa-times fa-w-11" aria-hidden="true"
+                                focusable="false" data-prefix="fas" data-icon="times" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="wrapper__content-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="content-body__heading">LOCKED SAFE</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider">
+                                        <div class="divider__line">
+
+                                        </div>
+                                        <div class="divider__icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="divider__line">
+
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/images/safe.png" alt="">
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5 content-body__text">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Mollitia
+                                        neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
+                                        quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                        itaque. Nam.</p>
+                                    <button class="btn btn-primary content-body__btn" data-dismiss="modal">
+                                        <svg class="svg-inline--fa fa-times fa-w-11 fa-fw" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="times" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                            </path>
+                                        </svg>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6 -->
+        <div class="portfolio__modal" id="modal6">
+            <div class="portfolio__modal-wrapper">
+                <div class="modal-wrapper__content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><svg class="svg-inline--fa fa-times fa-w-11" aria-hidden="true"
+                                focusable="false" data-prefix="fas" data-icon="times" role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <div class="wrapper__content-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="content-body__heading">SUBMARINE</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider">
+                                        <div class="divider__line">
+
+                                        </div>
+                                        <div class="divider__icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="divider__line">
+
+                                        </div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/images/submarine.png" alt="">
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5 content-body__text">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Mollitia
+                                        neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore
+                                        quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
+                                        itaque. Nam.</p>
+                                    <button class="btn btn-primary content-body__btn" data-dismiss="modal">
+                                        <svg class="svg-inline--fa fa-times fa-w-11 fa-fw" aria-hidden="true"
+                                            focusable="false" data-prefix="fas" data-icon="times" role="img"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z">
+                                            </path>
+                                        </svg>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal Fade -->
+        <div class="modal-layout">
+
+        </div>
+        <!-- Go Top Button -->
+        <a href="#" class="go-top">
+            <svg class="svg-inline--fa fa-chevron-up fa-w-14" aria-hidden="true" focusable="false" data-prefix="fa"
+                data-icon="chevron-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                data-fa-i2svg="">
+                <path fill="currentColor"
+                    d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z">
+                </path>
+            </svg>
+        </a>
+    </div>
+</body>
+<!-- Link Js -->
+<script src="assets/js/main.js"></script>
+
+</html>

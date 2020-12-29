@@ -1,0 +1,83 @@
+/*========================================================== 9, Offer ==========================================================*/
+@import "recommend.scss";
+.offer {
+  @include max-breakpoint(426) {
+    // background-image: none;
+  }
+
+  .col-lg-6 {
+    padding: 0 !important;
+    &:last-child {
+      background-image: url("../../../images/home/paintball-sectionbg4.jpg");
+      background-size: cover;
+      background-position: right center;
+      background-repeat: no-repeat;
+      background-color: #161719;
+    }
+  }
+  &__image {
+  }
+
+  &__content {
+    padding: 7.5rem 5% 4.375rem;
+
+    position: relative;
+    z-index: 1;
+
+    &-heading {
+      font-family: "Bungee", cursive;
+      color: $color-white;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+
+      @include max-breakpoint(769) {
+        font-size: 2rem;
+      }
+
+      @include max-breakpoint(426) {
+        font-size: 1.75rem;
+      }
+    }
+
+    &-text {
+      font-family: "Rubik", Arial, Tahoma, sans-serif;
+      color: #e3e3e3;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    &-btn {
+      @extend .recommend__item-btn;
+
+      .item-btn__label {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem;
+
+        @include max-breakpoint(426) {
+          padding: 0.5rem;
+        }
+      }
+      .item-btn__icon {
+        padding: 0.5rem 1rem;
+        @include max-breakpoint(426) {
+          padding: 0.5rem;
+        }
+      }
+    }
+
+    &:after {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #161719;
+      background-image: url("../../../images/home/paintball-home-wrapbg3.png");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+    }
+  }
+}

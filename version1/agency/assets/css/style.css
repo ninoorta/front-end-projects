@@ -1,0 +1,726 @@
+/* 
+
+    Theme name: Agency
+    Theme description: 3rd work
+    Author: Pham Anh Tuan
+    Version: 1.0.0
+
+
+======================================= TABLE OF CONTENTS =======================================
+    1, Reset css
+    2, Header
+    3, Banner
+    4, Services
+    5, Portfolio
+    6, About
+
+*/
+/* ======================================= 1, Reset css =======================================*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+.heading-general {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+.sub-heading-general {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #6c757d;
+}
+.text-muted {
+  color: #6c757d;
+}
+/* ======================================= 2, Header =======================================*/
+
+.header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+
+.header * {
+  color: #fff;
+}
+
+.header .header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header__menu .header__menu-logo .menu-logo__link img {
+  height: 2rem;
+}
+
+.header .header__menu .header__menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 2rem;
+}
+
+.header .header__menu .header__menu-list .menu-list__item {
+  margin-left: 2rem;
+}
+
+.header
+  .header__menu
+  .header__menu-list
+  .menu-list__item
+  .menu-list__item-link:hover {
+  color: #fed136;
+}
+
+.header .header__menu .header__menu-btn {
+  display: none;
+}
+/* ======================================= Media queries for header =======================================*/
+
+@media screen and (max-width: 991px) {
+  .header .header__menu .header__menu-btn {
+    display: block;
+    color: #fff;
+    background-color: #fed136;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+  }
+  .header .header__menu .header__menu-list {
+    display: none;
+  }
+  .header .header__menu .header__menu-logo {
+    /* visibility: hidden; */
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .header .header__menu .header__menu-btn {
+    font-size: 0.75rem;
+  }
+}
+/* ======================================= 3, Banner =======================================*/
+
+.banner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/header-bg.jpg") center/cover no-repeat; /*Short hand syntax
+            Nếu dùng background-image dùng không dùng được short hand syntax này
+        */
+  /* background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; */
+}
+
+.banner * {
+  color: #fff;
+}
+
+.banner .banner__content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner .banner__content .banner__content-header .content-header__title {
+  font-size: 2.25rem;
+  font-style: italic;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+.banner .banner__content .banner__content-header .content-header__greeting {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.banner .banner__content .banner__content-header .content-header__btn {
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1.25rem 2.5rem;
+  color: #fff;
+  background-color: #fed136;
+  border-color: #fed136;
+  border: none;
+  display: inline-block;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.banner .banner__content .banner__content-header .content-header__btn:hover {
+  color: #fff;
+  background-color: #fec810;
+  border-color: #fec503;
+}
+
+/* ======================================= Media queries for banner =======================================*/
+@media screen and (max-width: 991px) {
+  /* .banner .banner__content .banner__content-header .content-header__btn  {
+            font-size: 1rem;
+        } */
+}
+
+@media screen and (max-width: 426px) {
+  .banner .banner__content .banner__content-header .content-header__title {
+    font-size: 1.75rem;
+  }
+  .banner .banner__content .banner__content-header .content-header__greeting {
+    font-size: 3rem;
+  }
+
+  .banner .banner__content .banner__content-header .content-header__btn {
+    font-size: 1rem;
+  }
+}
+
+/* ======================================= 4, Services =======================================*/
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.services .services__content .services__content-header {
+  margin-bottom: 3rem;
+}
+.services
+  .services__content
+  .services__content-header
+  .content-header__heading {
+}
+.services
+  .services__content
+  .services__content-header
+  .content-header__sub-heading {
+}
+
+.services .services__content .services__content-item i {
+  font-size: 4rem;
+  background-color: #fed136;
+  color: #fff;
+  border-radius: 99%;
+  padding: 2rem;
+}
+.services .services__content .services__content-item .content-item__title {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+.services .services__content .services__content-item .content-item__text {
+  color: #6c757d;
+}
+
+.services .services__content .services__content-item {
+  margin-bottom: 2rem;
+}
+
+/* ======================================= Media queries for services =======================================*/
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 426px) {
+}
+
+/* ======================================= 5, Portfolio =======================================*/
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 6rem;
+  background-color: #f8f9fa;
+}
+
+.portfolio .portfolio__content .portfolio__content-header {
+  margin-bottom: 3rem;
+}
+.portfolio
+  .portfolio__content
+  .portfolio__content-header
+  .content-header__sub-title {
+}
+
+.portfolio .portfolio__content .portfolio__content-item {
+  margin-bottom: 1.5rem;
+}
+
+.portfolio .portfolio__content .portfolio__content-item .content-item__caption {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.portfolio .portfolio__content .portfolio__content-item img {
+  width: 100%;
+  display: block;
+}
+.portfolio
+  .portfolio__content
+  .portfolio__content-item
+  .content-item__caption
+  .content-item__caption-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.portfolio
+  .portfolio__content
+  .portfolio__content-item
+  .content-item__caption
+  .content-item__caption-sub-heading {
+  color: #6c757d;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.portfolio .portfolio__content .portfolio__content-item .content-item__link {
+  display: block;
+  position: relative;
+}
+.portfolio
+  .portfolio__content
+  .portfolio__content-item
+  .content-item__link
+  .content-item__link-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(254, 209, 54, 0.9);
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+.portfolio
+  .portfolio__content
+  .portfolio__content-item
+  .content-item__link
+  .content-item__link-hover
+  .link-hover__icon {
+  font-size: 4rem;
+  color: #fff;
+}
+.portfolio
+  .portfolio__content
+  .portfolio__content-item
+  .content-item__link
+  .content-item__link-hover:hover {
+  opacity: 1;
+}
+
+/* ======================================= 6, About =======================================*/
+.about {
+  padding: 4rem 0;
+  text-align: center;
+}
+.about .about__content .about__content-timeline {
+  position: relative;
+  padding: 0;
+  margin-top: 3rem;
+}
+.about .about__content .about__content-timeline::before {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0.125rem;
+  margin-left: -1.5px;
+  content: "";
+  background-color: #e9ecef;
+}
+.about .about__content .about__content-timeline li {
+  min-height: 10rem;
+  position: relative;
+  margin-bottom: 10rem;
+}
+.about .about__content .about__content-timeline li::before {
+  display: table;
+  content: " ";
+}
+.about .about__content .about__content-timeline li::after {
+  clear: both;
+}
+.about .timeline-image {
+  width: 10rem;
+  height: 10rem;
+  margin-left: -5rem;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  text-align: center;
+  color: white;
+  border: 0.35rem solid #e9ecef;
+  border-radius: 100%;
+  background-color: #fed136;
+}
+.about .timeline-image img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.about .about__content .about__content-timeline .timeline-body {
+  margin-top: 1rem;
+}
+
+.about__content-timeline .content-timeline__item .timeline-panel {
+  text-align: right;
+  float: left;
+  width: 41%;
+  padding: 0 2rem 2rem;
+}
+
+.about__content-timeline .content-timeline__item-inverted .timeline-panel {
+  text-align: left;
+  float: right;
+  width: 41%;
+  padding: 0 2rem 2rem;
+}
+
+.timeline-panel__header .timeline-panel__header-heading,
+.timeline-panel__header-sub-heading {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.content-timeline__item-inverted {
+  /* margin-bottom: 5rem; */
+}
+.content-timeline__item-inverted .timeline-image .timeline-last-text {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+/* ======================================= Media queries for about =======================================*/
+@media screen and (max-width: 991px) {
+  .about .timeline-image {
+    width: 7rem;
+    height: 7rem;
+    margin-left: -3.6rem;
+    margin-top: 0;
+  }
+  .about .timeline-image:last-child {
+    margin-top: 3rem;
+  }
+  .timeline-panel__header .timeline-panel__header-heading,
+  .timeline-panel__header-sub-heading {
+    font-size: 1.2rem;
+  }
+  .content-timeline__item-inverted .timeline-image .timeline-last-text {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .about .about__content .about__content-timeline::before {
+    left: 2.5rem;
+    margin-left: 0;
+    bottom: 3rem;
+  }
+
+  .about .about__content .about__content-timeline li {
+    min-height: 8rem;
+    position: relative;
+    margin-bottom: 8rem;
+  }
+
+  .about__content-timeline .content-timeline__item .timeline-panel,
+  .about__content-timeline .content-timeline__item-inverted .timeline-panel {
+    float: right;
+    text-align: left;
+    width: 100%;
+    /* padding: 0 2rem 0 6rem; */
+    padding: 0 0 0 6rem;
+  }
+  .about .about__content-timeline .timeline-image {
+    margin-top: 0;
+    width: 5rem;
+    height: 5rem;
+    margin-left: 0;
+    left: 0;
+  }
+  .about .about__content-timeline .timeline-image:last-child {
+    /* margin-top: 7rem; */
+  }
+  .content-timeline__item-inverted .timeline-image .timeline-last-text {
+    font-size: 0.7rem;
+    margin-top: 1rem;
+  }
+
+  .text-muted {
+    font-size: 0.9rem;
+  }
+}
+
+/* ======================================= 7, Team =======================================*/
+.team {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.team .team__content .team__content-header {
+  margin-bottom: 2rem;
+}
+
+.team .team__content .team__content-member {
+  margin: 2.5rem 0;
+}
+
+.team .team__content .team__content-member img {
+  border-radius: 50%;
+  width: 15rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.team .team__content .team__content-member .content-member__heading {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+.team .team__content .team__content-member .content-member__text {
+  color: #6c757d;
+}
+
+.team .team__content .team__content-member .content-member__link {
+  display: inline-flex;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #343a40;
+  border-color: #343a40;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.team .team__content .team__content-member .content-member__link:hover {
+  color: #fff;
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+.team .team__content .team__content-ending {
+  margin: 0 auto;
+}
+.team .team__content .team__content-ending .content-ending__text {
+  color: #6c757d;
+}
+
+/* ======================================= 8, Client =======================================*/
+.client {
+  padding: 4rem 0;
+}
+
+.client .client__link img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* ======================================= 9, Contact =======================================*/
+.contact {
+  padding: 5rem 0;
+  text-align: center;
+  background-color: #212529;
+  background-image: url("../images/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.contact .contact__content .contact__content-header .content-header__heading {
+  color: #fff;
+}
+.contact .contact__form {
+  margin-top: 2.5rem;
+}
+.contact .contact__form .contact__form-input {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.contact .contact__form .contact__form-input:last-child {
+  margin-bottom: 0;
+}
+.contact .contact__form .contact__form-input input {
+  width: 100%;
+  padding: 1.25rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.contact .contact__form .contact__form-input input::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: #767676;
+}
+.contact .contact__form .contact__form-input input:focus,
+.contact .contact__form .contact__form-text textarea:focus {
+  border-color: #fed136;
+  box-shadow: none;
+  outline: none;
+}
+.contact .contact__form .contact__form-text {
+  height: 100%;
+}
+.contact .contact__form .contact__form-text textarea {
+  height: 100%;
+  width: 100%;
+  padding: 1.25rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+.contact .contact__form .contact__form-text textarea::placeholder {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #767676;
+  line-height: 1rem;
+}
+
+.contact .contact__form .contact__form-btn {
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 1.25rem 2rem;
+  background-color: #fed136;
+  border-color: #fed136;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+}
+.contact .contact__form .contact__form-btn:hover {
+  color: #fff;
+  background-color: #fec810;
+  border-color: #fec503;
+}
+
+/* ======================================= Media queries for services =======================================*/
+
+@media screen and (max-width: 767px) {
+  .contact .contact__form .contact__form-input:last-child {
+    margin-bottom: 1.5rem;
+  }
+  .contact .contact__form .contact__form-text textarea {
+    min-height: 10rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .contact {
+    padding: 4rem 0;
+  }
+}
+
+/* ======================================= 10, Footer =======================================*/
+.footer {
+  padding: 1rem 0;
+}
+
+.footer .footer__content-left {
+  text-align: left;
+  font-weight: 400;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer__content-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.footer .footer__content-link .content-link__item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #343a40;
+  border-color: #343a40;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.footer .footer__content-link .content-link__item:hover {
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+
+.footer .footer__content-right {
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.footer .footer__content-right .content-right__link {
+  color: #fed136;
+}
+.footer .footer__content-right .content-right__link:last-child {
+  margin-left: 2rem;
+}
+
+.footer .footer__content-right .content-right__link:hover {
+  color: #e6b301;
+  text-decoration: underline;
+}
+
+/* ======================================= Media queries for footer =======================================*/
+@media screen and (max-width: 991px) {
+  .footer .row .footer__content-left {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .footer__content-link .content-link__item {
+    margin: 2rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .footer .footer__content-link .content-link__item {
+    margin: 1rem 0.5rem;
+  }
+}

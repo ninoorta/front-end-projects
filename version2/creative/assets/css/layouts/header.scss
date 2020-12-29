@@ -1,0 +1,138 @@
+/*============================================= 2, Header =============================================*/
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0.5rem;
+  background: transparent;
+  box-shadow: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+
+  @include max-breakpoint(992) {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    background-color: $color-white;
+    transition: background-color 0.2s ease;
+
+    * {
+      color: $color-black;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &-btn {
+      display: none;
+      @include max-breakpoint(992) {
+        display: block;
+        background-color: #fff;
+        padding: 0.5rem 1rem;
+        border: 0.05rem solid #e3ebf3;
+        border-radius: 0.25rem;
+      }
+
+      @include max-breakpoint(426) {
+        padding: 0.35rem 0.75rem;
+      }
+
+      i {
+        color: #7e8c9b;
+        font-size: 1.5rem;
+      }
+    }
+
+    &-logo {
+      .menu-logo__link {
+        color: $color-light;
+        font-weight: bold;
+        font-size: 1.75rem;
+
+        @include max-breakpoint(992) {
+          color: $color-black;
+          font-size: 1.5rem;
+        }
+
+        @include max-breakpoint(426) {
+          font-size: 1.5rem;
+        }
+
+        &:hover {
+          color: $color-white;
+
+          @include max-breakpoint(992) {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+
+      @include max-breakpoint(992) {
+        display: none;
+      }
+
+      .list__item {
+        margin-left: 2rem;
+
+        @include max-breakpoint(992) {
+          margin: 1rem 0 0 0;
+        }
+        &-link {
+          color: $color-light;
+          font-weight: bold;
+
+          @include max-breakpoint(992) {
+            color: $color-black-lighter;
+          }
+
+          &:hover {
+            color: $color-white;
+            @include max-breakpoint(992) {
+              color: $color-primary;
+            }
+          }
+        }
+
+        &:first-child {
+          margin: 0;
+
+          @include max-breakpoint(992) {
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .show {
+    display: flex;
+    flex-basis: 100%;
+    max-height: 100%;
+    margin-top: 1rem;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-start;
+  }
+  .active {
+    color: $color-primary !important;
+  }
+}
+
+.scrolled {
+  background-color: $color-white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease;
+
+  .menu-logo__link,
+  .list__item-link, .list__item-link:hover, .menu-logo__link:hover{
+    color: $color-black;
+  }
+}

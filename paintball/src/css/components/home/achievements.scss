@@ -1,0 +1,43 @@
+/*========================================================== 8, Achivements ==========================================================*/
+.achievements {
+  padding: 6.875rem 0 4.375rem 0;
+  background-color: $color-black;
+
+  .col-lg-6 {
+    @include max-breakpoint(768) {
+      padding: 0 !important;
+    }
+  }
+
+  @include max-breakpoint(768) {
+    padding: 4.875rem 0 4.375rem 0;
+  }
+  &__item {
+    @include max-breakpoint(992) {
+      margin-top: 2.5rem;
+    }
+    &-img {
+      margin: 0 auto;
+      width: 170px;
+      height: 120px;
+    }
+
+    &-desc {
+      color: $color-white;
+      margin-top: 1.5rem;
+
+      .item-desc__number {
+        font-family: "Bungee", cursive;
+        font-size: 3.125rem;
+        line-height: 3.2rem;
+        margin-bottom: 0.25rem;
+      }
+      .item-desc__title {
+        font-family: "Rubik", sans-serif;
+        color: #dedede;
+        font-size: 1rem;
+        line-height: 1.25rem;
+      }
+    }
+  }
+}

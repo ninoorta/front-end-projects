@@ -1,0 +1,29 @@
+// Start Message Form
+.contact-message
+    .container
+        h2.contact-message__heading
+            | SEND US A MESSAGE
+        form.contact-message__form
+            .row
+                .col-lg-6.col-md-6.mb-3
+                    input(type="text" placeholder="Your name").contact-message__form-input
+                .col-lg-6.col-md-6.mb-3
+                    input(type="text" placeholder="Your e-mail").contact-message__form-input
+                .col-12.mb-3
+                    input(type="text" placeholder="Subject").contact-message__form-input
+                .col-12
+                    textarea(name="", cols="30", rows="10" placeholder="Message").contact-message__form-input
+                .col-12
+                    input(type="submit" value="Send a message").contact-message__form-btn.mt-3
+iframe(width='100%' height='100%' frameborder='0' style='border:0' src='https://www.google.com/maps/embed/v1/place?q=place_id:ChIJlV2g1U1d1moRdTp6XdvXQTk&key=AIzaSyD9S6dsK54QqbtkRNoGiyI1QqtYUWGWupY' allowfullscreen='')
+
+
+// End Message Form
+script.
+      window.onresize = () => {
+            if (document.body.clientWidth < 426) {
+                document.getElementsByName("textarea")[0].rows = "5"
+            } else {
+                document.getElementsByName("textarea")[0].rows = "10"
+            }
+        }

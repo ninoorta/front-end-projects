@@ -1,0 +1,10 @@
+/*============================================= 9, Footer =============================================*/
+.footer{
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+
+
+    &__text{
+        color: $color-black-lighter;
+    }
+}

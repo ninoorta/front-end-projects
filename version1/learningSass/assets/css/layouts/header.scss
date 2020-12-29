@@ -1,0 +1,50 @@
+.header{
+    height: 80px;
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    
+    & *{
+        color: #fff;
+    }
+
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-bar{
+            display: none;
+        }
+
+        &-logo{
+            font-size: 1.75rem;
+        }
+
+        &-list{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .list__item{
+                padding-left: 3rem;
+
+
+                &-link{
+
+                    &:hover{
+                        color: #1abc9c ;
+                    }
+                }
+            }
+        }
+    }
+
+}

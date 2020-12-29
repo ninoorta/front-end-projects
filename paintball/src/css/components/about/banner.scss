@@ -1,0 +1,28 @@
+/*========================================================== About page, Banner ==========================================================*/
+.about-banner {
+  font-family: "Bungee", cursive;
+  background-image: url("../../../images/about/paintball-about-subheader.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $color-white;
+  display: flex;
+  align-items: center;
+  height: 500px;
+
+  @include max-breakpoint(426) {
+    height: 300px;
+  }
+  .banner__heading {
+    @include max-breakpoint(426) {
+      padding: 0 0.5rem;
+    }
+    &-title {
+      font-size: 3.5rem;
+
+      @include max-breakpoint(426) {
+        font-size: 2rem;
+      }
+    }
+  }
+}

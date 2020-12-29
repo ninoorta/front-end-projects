@@ -1,0 +1,170 @@
+/* ============================================= 3, Portfolio ============================================= */
+.portfolio {
+  color: $color-secondary;
+
+  .divider__line {
+    background-color: $color-secondary;
+  }
+  .divider__icon {
+    color: $color-secondary;
+  }
+
+  &__heading {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  &__item {
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.5rem;
+    display: block;
+    margin-bottom: 3rem;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover &-icon {
+      opacity: 1;
+    }
+    &-icon {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: 0.3s;
+      background-color: rgba(26, 188, 156, 0.9);
+
+      i {
+        font-size: 3.5rem;
+        color: $color-white;
+      }
+    }
+  }
+
+  &__modal {
+    padding-right: 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    transition: opacity 0.15s linear;
+
+    @include max-breakpoint(769) {
+      padding: 0;
+    }
+
+    &-wrapper {
+      margin: 1.75rem auto;
+      max-width: 800px;
+      font-weight: bold;
+      color: $color-secondary;
+      transition: transform 0.3s ease-out;
+      transform: translate(0, -50px);
+
+      @include max-breakpoint(769) {
+        max-width: 500px;
+      }
+
+      .modal-wrapper__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 0 solid rgba(0, 0, 0, 0.2);
+        border-radius: 0.75rem;
+        outline: 0;
+
+        .wrapper__content-body {
+          padding: 4rem 1rem;
+
+          .content-body__heading {
+            font-size: 3rem;
+            @include max-breakpoint(426) {
+              font-size: 2rem;
+            }
+          }
+
+          .content-body__text {
+            color: #212529;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5;
+          }
+
+          .content-body__btn {
+            background-color: $color-primary;
+            border: none;
+
+            &:focus {
+              color: $color-white;
+              background-color: #159a80;
+              border-color: #148f77;
+              box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+            }
+
+            svg {
+              width: 0.75rem;
+            }
+          }
+
+          .divider__line {
+            background-color: $color-secondary;
+          }
+          .divider__icon {
+            color: $color-secondary;
+          }
+        }
+
+        .close {
+          width: 1.5rem;
+          position: absolute;
+          z-index: 1;
+          right: 1.5rem;
+          top: 1rem;
+          font-size: 3rem;
+          line-height: 3rem;
+          color: $color-primary;
+          opacity: 1;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .portfolio {
+    &__heading {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .portfolio {
+    &__heading {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+// Modal box : ....

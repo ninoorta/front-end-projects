@@ -1,0 +1,22 @@
+extends master.pug 
+block content
+  include ./components/About/banner.pug
+  include ./components/About/features.pug
+  include ./components/About/contact.pug
+  include ./components/About/progress.pug
+  // Link Jquery
+  script(src='https://code.jquery.com/jquery-3.5.1.slim.js' integrity='sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=' crossorigin='anonymous')
+  script.
+    $(window).scroll(function () {
+      var hT = $('#scroll-to').offset().top,
+      hH = $('#scroll-to').outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+      console.log((hT - wH), wS);
+      if (wS > (hT + hH - wH)) {
+        $(".process").each(function () {
+          each_bar_width = $(this).attr("aria-valuenow");
+          $(this).width(each_bar_width + "%");
+        });
+      }
+    });

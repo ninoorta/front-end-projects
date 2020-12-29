@@ -1,0 +1,80 @@
+/*=================================== 7, Guide ===================================*/
+.guide {
+  &__content {
+    &-heading {
+      .content-heading__title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+      }
+      .content-heading__text {
+        color: #777;
+        font-size: 1.5rem;
+        padding: 0 6rem;
+
+        @include max-breakpoint(426) {
+          padding: 0;
+          font-size: 1rem;
+        }
+      }
+    }
+    &-video {
+      margin-top: 3rem;
+
+      .content-video__wrapper {
+        .video__wrapper-link {
+          display: block;
+          position: relative;
+
+          .wrapper-link__icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 7rem;
+            width: 7rem;
+
+            @include max-breakpoint(426) {
+              height: 3.5rem;
+              width: 3.5rem;
+            }
+
+            &:hover {
+              .link__icon-outline {
+                transform: scale(1.2);
+              }
+            }
+
+            .link__icon-outline {
+              display: block;
+              background: #fff;
+              box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
+              height: 7rem;
+              width: 7rem;
+              border-radius: 50%;
+              transition: all 0.3s;
+
+              @include max-breakpoint(426) {
+                height: 3.5rem;
+                width: 3.5rem;
+              }
+            }
+
+            i {
+              font-size: 1.5rem;
+              color: #303133;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+
+              @include max-breakpoint(426) {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

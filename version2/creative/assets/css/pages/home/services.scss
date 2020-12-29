@@ -1,0 +1,23 @@
+/*============================================= 5, Services =============================================*/
+.services{
+    @include max-breakpoint(769) {
+        padding: 3rem 0;
+      }
+
+    &__title{
+        font-size: 1.5rem;
+    }
+    .list__item{
+
+        i{
+            color: $color-primary;
+            font-size: 4rem;
+            margin-bottom: 1.25rem;
+        }
+
+        @include max-breakpoint(992) { 
+            margin-bottom: 2rem;
+         }
+
+    }
+}

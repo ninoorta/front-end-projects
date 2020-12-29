@@ -1,0 +1,25 @@
+/*============================================= 7, Action =============================================*/
+.action {
+  background-color: #343a40;
+  padding: 6rem 0;
+  &__heading {
+    margin-bottom: 3rem;
+    color: $color-white;
+  }
+
+  &__btn {
+    padding: 1.25rem 2.25rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: none;
+    color: $color-black;
+    background-color: #f8f9fa;
+    border-radius: 15rem;
+
+    &:hover {
+      color: $color-black;
+      background-color: #e2e6ea;
+      border-color: #dae0e5;
+    }
+  }
+}

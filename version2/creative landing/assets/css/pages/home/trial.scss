@@ -1,0 +1,119 @@
+/*=================================== 7, Trial ===================================*/
+.trial {
+  background: linear-gradient(to left, #6442ff96 0%, #9012fe9e 100%),
+    url("../images/rawpixel-com-594859-unsplash-min.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding: 6rem 0;
+  color: $color-white;
+  text-align: center;
+  &__content {
+    &-heading {
+      .content-heading__title {
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+      }
+      .content-heading__info {
+        .heading__info-title {
+          padding: 0 4rem;
+          margin: 2rem 0;
+          font-size: 2rem;
+          font-weight: bold;
+
+          @include max-breakpoint(426) {
+            font-size: 1.5rem;
+            padding: 0;
+          }
+        }
+      }
+    }
+    &-form {
+      padding: 0 6rem;
+
+      @include max-breakpoint(426) {
+        padding: 0;
+      }
+
+      .content-form__item {
+        input {
+          width: 100%;
+          display: block;
+          margin-top: 0.75rem;
+          padding: 1rem 0.75rem;
+          border-style: solid;
+          border-radius: 0.25rem;
+          border: 1px solid transparent;
+          margin: 1rem 0;
+
+          &::placeholder {
+            color: #bfc4cb;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .content-form__btn {
+        margin-top: 1.5rem;
+        font-weight: 700;
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+        border-radius: 0.25rem;
+        background-color: $color-primary;
+        padding: 1.25rem 2.75rem;
+        box-shadow: none;
+        border: none;
+        outline: none;
+
+        @include max-breakpoint(426) {
+          padding: 1.25rem 2rem;
+        }
+
+        &:hover {
+          background-color: $color-primary-bold;
+        }
+      }
+    }
+  }
+
+  &-waves {
+    position: relative;
+    height: 20rem;
+
+    @include max-breakpoint(768) {
+      height: 16rem;
+    }
+  }
+
+  &-top-waves {
+    svg {
+      width: 100%;
+      transform: translatex(-50%) scaley(-1);
+      height: 100%;
+      margin-top: -7rem;
+      position: absolute;
+
+      @include max-breakpoint(426) {
+        margin-top: -6rem;
+      }
+    }
+  }
+  &-bottom-waves {
+    transform: scaleX(-1) translateZ(0);
+
+    svg {
+      height: 100%;
+      left: 50%;
+      width: 100%;
+      position: absolute;
+      transform: translatex(-50%);
+      margin-top: 7rem;
+
+      @include max-breakpoint(426) {
+        margin-top: 6rem;
+      }
+    }
+  }
+}

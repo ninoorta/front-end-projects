@@ -1,0 +1,65 @@
+/*========================================================== Contact page, Contact Information ==========================================================*/
+.contact-info {
+  padding: 6.875rem 0 4.375rem 0;
+  background-color: $color-black;
+
+  .contact-col {
+    &:first-child {
+      .contact-info__item-img {
+        img {
+          width: 31px;
+          height: 100%;
+        }
+      }
+    }
+    &:nth-child(2) {
+      .contact-info__item-img {
+        img {
+          width: 21px;
+          height: 100%;
+        }
+      }
+    }
+    &:last-child {
+      .contact-info__item-img {
+        img {
+          width: 34px;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &__item {
+    @include max-breakpoint(426) {
+      padding: 0 1rem;
+      margin-bottom: 2rem;
+    }
+    &-img {
+      height: 40px;
+    }
+    &-heading {
+      color: $color-primary;
+      font-size: 1.875rem;
+      font-family: "Bungee", cursive;
+      margin: 2rem 0;
+      text-transform: uppercase;
+
+      @include max-breakpoint(426) {
+        font-size: 1.125rem;
+      }
+    }
+
+    &-subtext {
+      color: #676464;
+      margin-bottom: 0.3rem;
+      font-size: 1rem;
+    }
+
+    &-text {
+      font-size: 0.875rem;
+      font-family: "Rubik", Arial, Tahoma, sans-serif;
+      color: #e3e3e3;
+    }
+  }
+}

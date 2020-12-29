@@ -1,0 +1,13 @@
+extends master.pug
+block content
+   include ./components/Home/banner.pug
+   include ./components/Home/pros.pug
+   include ./components/Home/recommend.pug
+   include ./components/Home/types.pug
+   include ./components/Home/review.pug
+   include ./components/Home/achievements.pug
+   include ./components/Home/offer.pug
+   script.
+      let currentHeight = document.documentElement.clientWidth * 0.8;
+      document.querySelector('.banner').style.height = `${currentHeight}px`;
+      console.log(document.height * 0.85 + "px")

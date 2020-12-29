@@ -1,0 +1,71 @@
+/*
+Theme name: Paintball
+Theme description:
+Author: PHAM ANH TUAN
+Version: 1.0.0
+
+========================================================== TABLES OF CONTENT ==========================================================
+1, Reset CSs
+2, Header
+3, Banner
+4, Pros
+5, Recommend
+6, Types
+*/
+
+/*========================================================== 1, Reset Css ==========================================================
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  letter-spacing: 1px;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+ul {
+  margin-bottom: 0 !important;
+  li {
+    list-style: none;
+  }
+}
+
+img {
+  width: 100%;
+  display: block;
+  vertical-align: middle;
+}
+
+.wrapper {
+  // position: relative;
+  overflow: hidden;
+}
+.btn {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.active {
+  color: #fff !important;
+}
+#top {
+  left: 0px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+*::selection {
+  background-color: #ff732e;
+  color: white;
+}

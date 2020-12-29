@@ -1,0 +1,44 @@
+/*=================================== 8, Events ===================================*/
+.events {
+
+ @include max-breakpoint(581){
+     text-align: center;
+ }
+  &__item {
+
+    @include max-breakpoint(581){
+        padding: 0 1rem;
+    }
+    &-date {
+
+      small{
+          font-weight: bold !important;
+      }
+    }
+
+    &-heading {
+      color: $color-black;
+      font-weight: bold;
+      font-size: 1.85rem;
+      margin: 1rem 0;
+
+      @include max-breakpoint(768){
+          font-size: 1.5rem;
+      }
+    }
+
+    &-info {
+      color: #777;
+      line-height: 1.25rem;
+      font-size: 1.15rem;
+    }
+  }
+
+  .owl-dots{
+      margin-top: 3rem !important;
+
+      @include max-breakpoint(426){
+        margin-top: 0 !important;;
+      }
+  }
+}

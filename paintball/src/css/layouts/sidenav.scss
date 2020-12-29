@@ -1,0 +1,104 @@
+/*========================================================== 12, Sidenav ==========================================================*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  right: 0;
+  background-color: #191919;
+  border-color: #191919;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: "Bungee", cursive;
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2.25rem;
+    color: #a6a6a6;
+    display: block;
+    margin: 15px 15px 0 0;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+  .buy {
+    width: 100%;
+    &__link {
+      color: $color-white;
+      background-color: #f7f7f7 !important;
+      padding: 0.6875rem 1.5rem;
+      border-radius: 0.25rem;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1.25rem;
+      color: #747474;
+      position: relative;
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 0%;
+        transition: all 0.5s;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.05);
+        height: 100%;
+        z-index: 1;
+      }
+
+      &:hover {
+        &::after {
+          position: absolute;
+          content: "";
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__list {
+    width: 100%;
+    .list__item {
+      text-align: left;
+      padding: 11px 5px 10px 20px;
+      line-height: 19px;
+      border-top: 1px solid rgba(255, 255, 255, 0.03);
+
+      &:first-child {
+        .list__item-link {
+          color: $color-white;
+        }
+      }
+
+      &:last-child {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      }
+      &-link {
+        color: #a6a6a6;
+
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+
+.body-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 350;
+  display: none;
+}

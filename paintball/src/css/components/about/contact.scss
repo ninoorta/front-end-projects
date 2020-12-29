@@ -1,0 +1,63 @@
+/*========================================================== About page, Contact ==========================================================*/
+@import "../home/offer.scss";
+.about-contact {
+  background-image: url("../../../images/about/paintball-sectionbg3.jpg");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-color: #161719;
+
+  .col-md-6 {
+    &:last-child {
+      padding: 0 !important;
+    }
+  }
+
+  .container {
+    @include max-breakpoint(768) {
+      padding: 0;
+      margin-right: 0;
+    }
+
+    @include max-breakpoint(426) {
+      margin-right: auto;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+
+  &-image {
+  }
+
+  &__content {
+    background-image: url("../../../images/about/paintball-about-wrapbg1.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: #161719;
+    color: $color-white;
+    padding: 7.5rem 5% 5.375rem;
+
+    &-heading {
+      font-family: "Bungee", cursive;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+
+      @include max-breakpoint(426) {
+        font-size: 1.5rem;
+      }
+    }
+
+    &-text {
+      color: #e3e3e3;
+      font-size: 1rem;
+
+      @include max-breakpoint(426) {
+        font-size: 0.85rem;
+      }
+    }
+
+    &-btn {
+      @extend .offer__content-btn;
+    }
+  }
+}

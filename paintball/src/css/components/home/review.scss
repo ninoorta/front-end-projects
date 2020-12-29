@@ -1,0 +1,105 @@
+/*========================================================== 7, Review ==========================================================*/
+.review {
+  padding: 6.875rem 0 4.375rem 0;
+  font-family: "Bungee", cursive;
+
+  @include max-breakpoint(426) {
+    padding: 3rem 0 4rem 0;
+  }
+
+  &-slider {
+    .slider__item {
+      &-heading {
+        color: $color-primary;
+        margin-bottom: 2.5rem;
+        font-size: 2.1rem;
+
+        @include max-breakpoint(768) {
+          font-size: 1rem;
+        }
+      }
+
+      &-img {
+        height: 85px;
+        width: 85px;
+        margin: 0 auto;
+
+        img {
+        }
+      }
+
+      &-quote {
+        margin: 2rem 10%;
+        font-size: 1rem;
+        color: #444;
+        font-family: "Rubik", Arial, Tahoma, sans-serif;
+        font-style: italic;
+
+        @include max-breakpoint(769) {
+          font-size: 0.95rem;
+        }
+
+        @include max-breakpoint(426) {
+          margin: 2rem 16%;
+          text-align: center;
+          line-height: 2;
+        }
+      }
+
+      &-author {
+        color: #2d2e30;
+
+        @include max-breakpoint(426) {
+          font-size: 1rem;
+        }
+      }
+
+      .hr-dots {
+        text-align: center;
+        margin: 0 auto 15px;
+        span {
+          color: $color-primary;
+          background: $color-primary;
+          display: inline-block;
+          width: 5px;
+          height: 5px;
+          overflow: hidden;
+          margin: 0 5px;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .owl-dots {
+    .owl-dot.active {
+      span {
+        width: 10px;
+        height: 8px;
+        position: relative;
+        background: rgba(0, 0, 0, 0.15);
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        background-color: $color-primary !important;
+        display: inline-block;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 8px;
+          height: 8px;
+          -webkit-border-radius: 1px;
+          border-radius: 1px;
+          position: absolute;
+          left: 1px;
+          top: -3px;
+          background: #d6d6d6;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+          background-color: $color-primary !important;
+        }
+      }
+    }
+  }
+}

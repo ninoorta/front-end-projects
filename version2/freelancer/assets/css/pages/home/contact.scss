@@ -1,0 +1,96 @@
+/* ============================================= 5, Contact ============================================= */
+.contact {
+  color: $color-secondary;
+
+  .divider__line {
+    background-color: $color-secondary;
+  }
+  .divider__icon {
+    color: $color-secondary;
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    @include max-breakpoint(426){
+        font-size: 2.25rem;
+    }
+  }
+
+  &__form {
+    label {
+      opacity: 0;
+    }
+    input,
+    textarea {
+      width: 100%;
+      border: none;
+      font-size: 1.5rem;
+      padding-right: 0;
+      padding-left: 0;
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #d8dadd;
+      resize: none;
+
+      // @include max-breakpoint(940) {
+      //   width: 80%;
+      // }
+
+      @include max-breakpoint(426){
+        font-size: 1.35rem;
+    }
+
+
+      &:focus{
+          outline: none;
+      }
+      &::placeholder{
+          color: $color-secondary;
+          opacity: 0.75;
+      }
+
+    }
+  
+
+    &-btn {
+      .form-btn__submit {
+        color: $color-white;
+        background-color: $color-primary;
+        border: 0.5rem $color-primary;
+        padding: 1rem 1.75rem;
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        border-radius: 0.5rem;
+        box-shadow: none;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+
+        &:hover{
+            color:$color-white;
+            background-color: #159a80;
+            border-color: #148f77
+        }
+      }
+    }
+  }
+}
+
+// %message {
+//   width: 100px;
+//   height: 50px;
+// }
+
+// .yellow {
+//   @extend %message;
+//   color: yellow;
+// }
+
+// .blue {
+//   @extend %message;
+//   color: blue;
+// }
+
+// @include max-breakpoint(940) { width:80%; }

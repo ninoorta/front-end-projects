@@ -1,0 +1,3 @@
+Nếu dùng height thì nên căn bằng
+display: flex;
+    align-items: center;

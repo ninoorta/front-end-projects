@@ -1,0 +1,21 @@
+/*=================================== 12, Go Top Button ===================================*/
+.go-top-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  color: #777;
+  display: block;
+  z-index: 22;
+
+
+  i {
+    color: $color-white;
+    border-radius: 0.25rem;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    background-color: #303133;
+    border-color: #303133;
+    transition: all 0.1s linear;
+  }
+}

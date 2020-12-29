@@ -1,0 +1,505 @@
+/* 
+Theme name: Mobile App - SB Admin Pro
+Theme description:
+Author: Pham Anh Tuan
+Version: 1.0.0
+
+======================================= TABLE OF CONTENTS =======================================
+1, Reset Css
+2, Header
+3, Banner
+4, Pros
+5, Social
+6, Features
+7, Download
+8, Footer
+
+*/
+
+
+/* ======================================= 1, Reset Css ======================================= */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI"
+        , Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji"
+        , "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    a{
+        text-decoration: none;
+    }
+    img{
+        display: block;
+        vertical-align: middle;
+    }
+    ul li {
+        list-style: none;
+    }
+    hr{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .svg-border-waves svg{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 3rem;
+        left: 0;
+    }
+
+/* ======================================= 2, Header ======================================= */
+    .header{
+        height: 80px;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+    }  
+    .header .header__menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header__menu-logo .menu-logo__brand{
+        color: #0061f2;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .header__menu-logo .menu-logo__brand:hover{
+        color: #0042a6;
+    }
+
+    .header__menu-collapse{
+        display: flex;
+    }
+
+    .header__menu-collapse .menu-collapse__list{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 3rem;
+    }
+    .menu-collapse__list .collapse__list-item{
+        margin-left: 2rem;
+    }
+    .menu-collapse__list .collapse__list-item .list-item__link{
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 500;
+    }
+    .menu-collapse__list .collapse__list-item .list-item__link:hover{
+        color: rgba(0, 0, 0, 0.7);
+    }
+
+    .list-item__link i{
+        margin-left: 0.4rem;
+        font-size: 0.65rem;
+    }
+
+    .header__menu-collapse .menu-collapse__btn{
+        margin-left: 4rem;
+        padding: 0.75rem 2rem;
+        color: #fff;
+        background-color: #0061f2;
+        border-color: #0061f2;
+        border-radius: 50rem;
+        font-size: 0.8rem;
+        font-weight: 700;
+        border: none;
+    }
+    .header__menu-collapse .menu-collapse__btn:focus{
+        outline: none;
+    }
+    .header__menu-collapse .menu-collapse__btn:hover{
+        background-color: #0052cc;
+        border-color: #004dbf;
+    }
+    .header__menu-btn{
+        display: none;
+    }
+   
+    @media screen and (max-width: 991px){
+        .header .header__menu .header__menu-collapse {
+            display: none;
+        }
+        .header .header__menu .header__menu-btn{
+            display: block;
+            color: #949494;
+            background-color: #fff;
+            border: none;
+        }
+        .header__menu-btn i {
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+    }
+
+/* ======================================= 3, Banner ======================================= */
+    .banner{
+        padding: 8rem 0;
+        background-image: linear-gradient(135deg, #0061f2 0%, rgba(105, 0, 199, 0.8) 100%);
+        text-align: left;
+        position: relative;
+    }
+    .banner .banner__title{
+        color: #fff;
+        font-size: 2.5rem;
+    }
+    .banner .banner__text{
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1.15rem;
+        margin: 1rem 0 3rem 0;
+    }
+    .banner .banner__stores{
+        margin-bottom: 3rem;
+    }
+    .banner__stores-wrapper{
+        margin-bottom: 0.5rem;
+    }
+    .banner__stores-wrapper .stores-wrapper__link img{
+        height: 3rem;
+        display: inline-block;
+    }
+    .banner__stores-text{
+        color: rgba(255, 255, 255, 0.5);
+    }
+    .banner .banner__device{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+        width: 100%;
+        margin-bottom: -9rem;
+    }
+    .banner .banner__device::after{
+        position: absolute;
+        background-image: url("../images/portrait.png");
+        background-size: cover;
+    }
+    .banner .banner__device .banner__device-wrapper{
+        background-image: url("../images/portrait.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        padding-bottom: 198.898071625%;
+        z-index: 1;
+    }
+    .device-wrapper__screen{
+        position: absolute;
+        top: 3.1855955679%;
+        left: 6.8870523416%;
+        width: 86.2258953168%;
+        height: 93.6288088643%;
+    }
+
+    .banner__device-wrapper::after{
+        content: "";
+        background-image: url("../images/portrait.png");
+        position: absolute;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .banner .device-wrapper__screen img{
+        width: 100%;
+        position: relative;
+    }
+
+    .banner .svg-border-waves{
+        color: #fff;
+    }
+  
+    @media screen and (max-width:426px){
+        .banner .banner__title{
+            font-size: 2rem;
+        }
+        .banner__stores-wrapper .stores-wrapper__link img {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+/* ======================================= 4, Pros ======================================= */
+    .pros{
+        background-color: #fff;
+        padding: 6rem 0;
+
+    }
+
+    .pros .pros__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pros .pros__item-icon{
+        height: 5rem;
+        width: 5rem;
+        font-size: 1.75rem;
+        border-radius: 100%;
+        background-image: linear-gradient(135deg, #0061f2 0%, rgba(105, 0, 199, 0.8) 100%);
+        color: #fff;
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pros .pros__item .pros__item-heading{
+        color: #323f52;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+    .pros .pros__item .pros__item-text{
+        color: #687281;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width:991px){
+        .pros .pros__item{
+            margin-bottom: 3rem;
+        }
+    }
+
+
+/* ======================================= 5, Social ======================================= */
+    .social{
+        padding: 6rem 0;
+    }
+    .social .social__brand{
+        padding: 3rem;
+    }
+    .social .social__google{
+        border-right: 0.0625rem solid #e3e6ec;
+    }
+    .social .social__brand .social__brand-header{
+        margin-bottom: 1.2rem;
+        font-size: 1rem;
+    }
+    .social__brand svg{
+        height: 3rem;
+    }
+    .social .social__brand-text{
+        color: #0061f2;
+        font-size: 1.5rem;
+        font-weight: 350;
+        margin-bottom: 1rem;
+    }
+    .social .social__brand-speaker{
+        color: #687281;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .social .social__brand-job{
+        color: #687281;
+        font-size: 1rem;
+        font-weight: lighter;
+    }
+   
+    @media screen and (max-width:991px){
+        .social .social__google {
+            border-right: none;
+        }
+        .social .social__brand{
+            padding: 0 1.5rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+/* ======================================= 6, Features ======================================= */
+    .features{
+        padding: 6rem 0;
+        background-color: #eff3f9;
+    }
+
+    .features .features__header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features .features__header .features__header-text{
+        color: #0061f2;
+        font-weight: 700;
+        letter-spacing: 0.15rem;
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+    .features .features__header .features__header-title{
+        color: #323f52;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 3rem;
+    }
+    .features__item{
+        margin-bottom: 2rem;
+    }
+    .features__item .features__item-link{
+        display: block;
+    }
+    .features__item .features__item-link:hover{
+        box-shadow: 0 0.5rem 2rem 0 rgba(31, 45, 65, 0.25);
+        transform: translateY(-0.3333333333rem);
+        text-decoration: underline #687281;
+    }
+    .features__item .features__item-link .item-link__body{
+        padding: 3.5rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 0.15rem 1.75rem 0 rgba(31, 45, 65, 0.15);
+    }
+    .features__item-link .item-link__body .link__body-icon svg{
+        height: 4.5rem;
+        width: 4.5rem;
+        font-size: 1.5rem;
+        border-radius: 100%;
+        background-color: #bfe5dc;
+        padding: 1.5rem;
+    }
+    .link__body-icon #components{
+        color: #00ac69;
+    }
+    .link__body-icon  #utilities{
+        color: red;
+        background-color: #eec7c7;
+    }
+    .link__body-icon  #layouts{
+        color: #f4a100;
+        background-color: #f0e3c7;
+    }
+    .link__body-icon  #documentation{
+        color: #6900c7;
+        background-color: #d4c2ef;
+    }
+    .link__body-icon svg #snippets{
+        color: #0061f2 ;
+        background-color: #bfd6f8;
+    }
+    .link__body-icon svg #plugins{
+        color: #f76400;
+        background-color: #f1d6c7;
+    }
+    .features__item-link .item-link__body .link__body-icon{
+       margin-bottom: 1.5rem;
+    }
+    .features__item-link .item-link__body .link__body-heading{
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+        color: #323f52;
+        font-size: 1.2rem;
+    }
+    .features__item-link .item-link__body .link__body-text{
+        font-size: 0.85rem;
+        color: #7e93aa;
+    }
+
+/* ======================================= 7, Download ======================================= */
+    .download{
+        padding: 6rem 0;
+        position: relative;
+    }
+    .download .download__link{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .download .download__title{
+        color: #323f52;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        font-size: 1.4rem;
+    }
+    .download .download__title{
+        color: #687281;
+        font-size: 1.1rem;
+    }
+    .download .download__text{
+        margin-bottom: 3rem;
+    }
+    .download .download__link .download__link-item img{
+        height: 3rem;
+        margin-left: 1.5rem;
+    }
+    .download .svg-border-waves{
+        color: #1f2d41;
+        padding-top: 2rem;
+    }
+    
+/* ======================================= 8, Footer ======================================= */
+    .footer{
+        padding: 6rem 0 3rem 0;
+        background-color: #1f2d41;
+    }
+    .footer .footer__brand{
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.25rem;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .footer .footer__text{
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 1rem;
+    }
+    .footer .footer__list-icon{
+        display: flex;
+    }
+    .footer .footer__list-icon .list-icon__item svg{
+        width: 1rem;
+        color: rgba(255, 255, 255, 0.6);
+        margin-right: 0.5rem;
+    }
+    .footer .footer__heading{
+        font-weight: 700;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.6);
+        margin-bottom: 1.5rem;
+        letter-spacing: 0.15em;
+    }
+    .footer__list .footer__list-item{
+        margin-bottom: 0.5rem;
+    }
+    .footer__list .footer__list-item .list-item__link{
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .footer__list .footer__list-item .list-item__link:hover{
+        text-decoration: underline rgba(255, 255, 255, 0.6);
+    }
+    .footer hr{
+        border-color: rgba(255, 255, 255, 0.1);
+        margin: 3rem 0;
+    }
+    
+    .footer .footer__copyright, .footer__rules .footer__rules-link{
+        color: rgba(255, 255, 255, 0.6);
+    }
+    .footer .footer__rules{
+        color: rgba(255, 255, 255, 0.6);
+        text-align: right;
+    }
+
+    @media screen and (max-width:426px){
+        .footer .footer__copyright, .footer .footer__rules{
+            text-align: left;
+        }
+        .footer .footer__heading{
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+    }

@@ -1,0 +1,98 @@
+/*========================================================== 10, Footer ==========================================================*/
+.footer {
+  padding: 4.375rem;
+
+  @include max-breakpoint(768) {
+    padding: 4rem 0;
+  }
+
+  @include max-breakpoint(426) {
+    padding: 2rem 1.5rem;
+  }
+
+  // .col-lg-3 {
+  //   &:nth-child(2) {
+  //     @include max-breakpoint(768) {
+  //       .footer__item {
+  //         background-image: url("../../images/home/paintball-home-counter4.png");
+  //         background-position: right center;
+  //         background-repeat: no-repeat;
+  //       }
+  //     }
+
+  //     @include max-breakpoint(426) {
+  //       .footer__item {
+  //         background-image: unset;
+  //       }
+  //     }
+  //   }
+  //   &:nth-child(3) {
+  //     @include max-breakpoint(768) {
+  //       .footer__item {
+  //         background-image: url("../../images/home/paintball-home-counter3.png");
+  //         background-position: right center;
+  //         background-repeat: no-repeat;
+  //       }
+  //     }
+
+  //     @include max-breakpoint(426) {
+  //       .footer__item {
+  //         background-image: unset;
+  //       }
+  //     }
+  //   }
+  //   &:last-child {
+  //     @include max-breakpoint(768) {
+  //       .footer__item {
+  //         background-image: url("../../images/home/paintball-home-counter2.png");
+  //         background-position: right center;
+  //         background-repeat: no-repeat;
+  //       }
+  //     }
+
+  //     @include max-breakpoint(426) {
+  //       .footer__item {
+  //         background-image: unset;
+  //       }
+  //     }
+  //   }
+  // }
+
+  &__logo {
+    width: 10.5rem;
+    height: 5rem;
+    padding: 0.625rem 0;
+  }
+
+  hr {
+    border-color: $color-white;
+  }
+
+  &__item {
+    &-heading {
+      color: #020202;
+      font-family: "Bungee", cursive;
+      font-size: 1rem;
+      line-height: 1.6875rem;
+      margin-bottom: 1rem;
+    }
+
+    &-text {
+      color: #494949;
+      font-family: "Rubik", Arial, Tahoma, sans-serif;
+      font-size: 1rem;
+      line-height: 1.875rem;
+      a {
+        color: #7c7c7c;
+        &:hover {
+          color: $color-primary;
+          text-decoration: underline !important;
+        }
+      }
+
+      @include max-breakpoint(768) {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}

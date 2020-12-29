@@ -1,0 +1,39 @@
+/*========================================================== Contact page, Banner ==========================================================*/
+.contact-banner {
+  height: 500px;
+  background-image: url("../../../images/contact/paintball-contact-subheader.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20rem 0 13.75rem;
+  display: flex;
+  align-items: center;
+
+  @include max-breakpoint(769) {
+    // padding: 8rem 0;
+    .container {
+      padding-top: 3rem;
+    }
+  }
+
+  @include max-breakpoint(426) {
+    height: 250px;
+    padding: 10rem 0;
+  }
+
+  &__heading {
+    font-family: "Bungee", cursive;
+    color: $color-white;
+    font-size: 3rem;
+    margin: 0 auto;
+
+    @include max-breakpoint(769) {
+      font-size: 2.5rem;
+    }
+
+    @include max-breakpoint(426) {
+      font-size: 2rem;
+      padding: 0 1rem;
+    }
+  }
+}

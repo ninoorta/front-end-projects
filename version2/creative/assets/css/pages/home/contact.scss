@@ -1,0 +1,25 @@
+/*============================================= 8, Contact =============================================*/
+.contact {
+  @include max-breakpoint(769) {
+    padding: 3rem 0;
+  }
+
+  &__phone {
+    color: $color-black;
+  }
+
+  &__email {
+    color: $color-primary;
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: underline !important;
+    }
+  }
+
+  i {
+    color: #6c757d;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+}

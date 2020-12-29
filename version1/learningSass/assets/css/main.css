@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul, li {
+  list-style: none; }
+
+body {
+  background: #000;
+  color: #fff; }
+
+.header {
+  color: #000; }
+
+.header {
+  height: 80px;
+  background-color: #2c3e50;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99; }
+  .header * {
+    color: #fff; }
+  .header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .header__menu-bar {
+      display: none; }
+    .header__menu-logo {
+      font-size: 1.75rem; }
+    .header__menu-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap; }
+      .header__menu-list .list__item {
+        padding-left: 3rem; }
+        .header__menu-list .list__item-link:hover {
+          color: #1abc9c; }
+
+/* ====================== 3, Banner ====================== */
+.banner {
+  background-color: #1abc9c;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  .banner__infor {
+    padding-top: 6rem; }
+    .banner__infor-avatar {
+      width: 15rem;
+      margin-bottom: 3rem; }
+  .banner__heading {
+    font-size: 4rem;
+    line-height: 3.5rem; }
+  .banner__divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1.25rem 0 1.5rem; }
+  .banner__subheading {
+    font-size: 1.5rem; }
+
+/*# sourceMappingURL=main.css.map */

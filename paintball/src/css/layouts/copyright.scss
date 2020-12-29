@@ -1,0 +1,44 @@
+/*========================================================== 11, Copyright ==========================================================*/
+.copyright {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top-color: rgba(2, 2, 2, 0.1);
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    @include max-breakpoint(768) {
+      flex-direction: column;
+    }
+    &-text {
+      color: #494949;
+
+      @include max-breakpoint(768) {
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      .content-text__link {
+        color: #7c7c7c;
+
+        &:hover {
+          text-decoration: underline !important;
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  .go-top {
+    color: #65666c;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.75rem;
+  }
+}
